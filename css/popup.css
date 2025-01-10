@@ -404,7 +404,7 @@
 .event .progress_in { background: #4ECDC4; }
 .factor .progress_in { background: #45B7D1; }
 
-.modal {
+.modal1 {
     display: none;
     position: fixed;
     z-index: 1000;
