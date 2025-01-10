@@ -137,12 +137,7 @@
     border-left: 4px solid #e54b4b;
 }
 
-.timeline-section {
-    margin-bottom: 30px;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 8px;
-}
+
 
 .timeline {
     display: flex;
