@@ -235,6 +235,9 @@
 									cho dự án của bạn thành công. Tôi thích mọi bước của quá
 									trình thiết kế, từ thảo luận và hợp tác.
 								</p>
+								<span class="highlight-text" data-keyword="Độc lập dân tộc">Độc lập dân tộc</span>
+								<span class="highlight-text" data-keyword="tự do dân tộc">Tự do dân tộc</span>
+								<span class="highlight-text" data-keyword="tư tưởng Hồ Chí Minh gồm những nội dung nào">Tư tưởng Hồ Chí Minh</span>
 							</div>
 							<div class="list">
 								<ul>
@@ -979,7 +982,7 @@
 	<!-- /SCRIPTS -->
 	<script type="module">
 		import { GoogleGenerativeAI } from '@google/generative-ai';
-
+	
 		const apiKey = 'AIzaSyCpLTayB36F3TEMCbqdsWWnar81yksRPa8';
 		const genAI = new GoogleGenerativeAI(apiKey);
 		const generationConfig = {
@@ -988,9 +991,9 @@
 			topK: 40,
 			maxOutputTokens: 8192,
 		};
-
+	
 		let chat; // Store the chat session
-
+	
 		// Initialize the chat model and start a chat session
 		async function initializeChat() {
 			try {
@@ -1004,13 +1007,13 @@
 						}]
 					}
 				];
-
+	
 				// Start a chat session with history
 				chat = model.startChat({
 					history: history,
 					generationConfig,
 				});
-
+	
 				console.log('Chat initialized successfully');
 				// After initialization, add keyword listeners
 				addKeywordListeners();
@@ -1018,14 +1021,14 @@
 				console.error('Error initializing Gemini:', error);
 			}
 		}
-
+	
 		// Modified sendMessage function to use proper message format
 		async function sendMessage(messageText) {
 			if (!chat) {
 				appendMessage('Bot: Chat is not initialized yet. Please try again.');
 				return;
 			}
-
+	
 			// If messageText is not provided, get it from the input field
 			if (!messageText) {
 				const userInput = document.getElementById('user-input');
@@ -1033,32 +1036,32 @@
 				if (messageText === '') return;
 				userInput.value = '';
 			}
-
+	
 			// Always append the message to the chat
 			appendMessage('You: ' + messageText);
-
+	
 			// Show loading icon
 			const loadingContainer = document.getElementById('chatbot-loading');
 			loadingContainer.style.display = 'block';
-
+	
 			try {
 				const result = await chat.sendMessage(messageText);
 				const response = await result.response;
-
+	
 				// Hide loading icon
 				loadingContainer.style.display = 'none';
-
+	
 				appendMessage('Bot: ' + response.text());
 			} catch (error) {
 				console.error('Error calling Gemini API:', error);
-
+	
 				// Hide loading icon
 				loadingContainer.style.display = 'none';
-
+	
 				appendMessage('Bot: Sorry, I encountered an error. Please try again.');
 			}
 		}
-
+	
 		// Modified addKeywordListeners function
 		function addKeywordListeners() {
 			const highlights = document.querySelectorAll('.highlight-text');
@@ -1067,23 +1070,23 @@
 				keyword.addEventListener('click', handleKeywordClick);
 			});
 		}
-
+	
 		// Separate function to handle keyword clicks
 		function handleKeywordClick(event) {
 			const keywordText = event.target.getAttribute('data-keyword') || event.target.textContent;
 			if (keywordText) {
 				// Show the chatbot if it's hidden
-				const chatbotContainer = document.getElementById('chatbot-container');
-				chatbotContainer.style.display = 'block';
+				openChatbot();
+	
 				// Send the keyword text to the chatbot
 				sendMessage(keywordText);
 			}
 		}
-
+	
 		function appendMessage(message) {
 			const messagesContainer = document.getElementById('chatbot-messages');
 			const messageElement = document.createElement('div');
-
+	
 			// Determine if the message is from the user or the bot
 			if (message.startsWith('You:')) {
 				messageElement.classList.add('message', 'user-message'); // User message styles
@@ -1093,63 +1096,63 @@
 				const formattedMessage = formatBotMessage(message.replace('Bot: ', '')); // Format the bot message
 				messageElement.innerHTML = formattedMessage; // Use innerHTML to insert formatted content
 			}
-
+	
 			messagesContainer.appendChild(messageElement);
 			messagesContainer.scrollTop = messagesContainer.scrollHeight;
 		}
-
+	
 		// Function to format the bot message
 		function formatBotMessage(message) {
 			// Add CSS styles for the formatted message
 			const styles = `
-    <style>
-        .bot-message {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 10px;
-        }
-
-        .bot-message h3 {
-            color: #2c3e50;
-            margin: 20px 0 10px;
-            font-size: 1.4em;
-            font-weight: bold;
-        }
-
-        .bot-message .bot-list {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-
-        .bot-message .bot-list li {
-            margin: 8px 0;
-            position: relative;
-            list-style-type: none;
-        }
-
-        .bot-message .bot-list li strong {
-            display: inline-block;
-            padding-left: 20px;
-            color: #2980b9;
-            font-weight: 600;
-        }
-
-        .bot-message .bot-list li .bot-list-indent {
-            margin-left: 40px;
-            padding-left: 20px;
-            background-color: #f9f9f9;
-            border-left: 3px solid #3498db;
-            border-radius: 5px;
-        }
-    </style>`;
-
+		<style>
+			.bot-message {
+				font-family: Arial, sans-serif;
+				line-height: 1.6;
+				padding: 10px;
+			}
+	
+			.bot-message h3 {
+				color: #2c3e50;
+				margin: 20px 0 10px;
+				font-size: 1.4em;
+				font-weight: bold;
+			}
+	
+			.bot-message .bot-list {
+				margin: 10px 0;
+				padding-left: 20px;
+			}
+	
+			.bot-message .bot-list li {
+				margin: 8px 0;
+				position: relative;
+				list-style-type: none;
+			}
+	
+			.bot-message .bot-list li strong {
+				display: inline-block;
+				padding-left: 20px;
+				color: #2980b9;
+				font-weight: 600;
+			}
+	
+			.bot-message .bot-list li .bot-list-indent {
+				margin-left: 40px;
+				padding-left: 20px;
+				background-color: #f9f9f9;
+				border-left: 3px solid #3498db;
+				border-radius: 5px;
+			}
+		</style>`;
+	
 			// Helper function to create bullet points for content before and after the colon
 			function processContent(content) {
 				// Remove * characters and process bold formatting denoted by **
 				const sanitizedContent = content.replace(/\*/g, '').replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
 				const items = sanitizedContent.split(/:/).map(item => item.trim());
 				let result = '';
-
+	
 				if (items.length === 2) {
 					// Create bullet points for both sides of the colon
 					result += `<ul class="bot-list">`;
@@ -1162,27 +1165,27 @@
 					result += `<li>${items[0]}</li>`;
 					result += `</ul>`;
 				}
-
+	
 				return result;
 			}
-
+	
 			let formattedMessage = '';
-
+	
 			try {
 				// Split message into sections based on numbered titles
 				const sections = message.split(/(?=\d+\.\s)/);
-
+	
 				sections.forEach(section => {
 					if (section.trim()) {
 						// Match the heading and content
 						const headingMatch = section.match(/^(\d+\.\s[^\n]+)\n(.*)$/s);
-
+	
 						if (headingMatch) {
 							const [_, heading, content] = headingMatch;
-
+	
 							// Add formatted heading
 							formattedMessage += `<h3>${heading.trim()}</h3>`;
-
+	
 							// Process each line of content
 							const lines = content.trim().split(/\n/);
 							lines.forEach(line => {
@@ -1191,55 +1194,57 @@
 						}
 					}
 				});
-
+	
 				return `<div class="bot-message">${styles}${formattedMessage}</div>`;
 			} catch (error) {
 				console.error('Error formatting message:', error);
 				return `<div class="bot-message">${message}</div>`;
 			}
 		}
-
+	
+		function openChatbot() {
+			const chatbotContainer = document.getElementById('chatbot-container');
+			chatbotContainer.style.display = 'block';
+			setTimeout(() => {
+				chatbotContainer.classList.add('show');
+			}, 10); // Small delay to trigger the transition
+		}
+	
+		function closeChatbot() {
+			const chatbotContainer = document.getElementById('chatbot-container');
+			chatbotContainer.classList.remove('show');
+			setTimeout(() => {
+				chatbotContainer.style.display = 'none';
+			}, 300); // Match the transition duration
+		}
+	
 		// Event Listeners
 		document.getElementById('send-button').addEventListener('click', () => sendMessage());
-
+	
 		document.getElementById('user-input').addEventListener('keypress', function (e) {
 			if (e.key === 'Enter') {
 				e.preventDefault();
 				sendMessage();
 			}
 		});
-
+	
 		document.getElementById('open-chatbot').addEventListener('click', function () {
-			const chatbotContainer = document.getElementById('chatbot-container');
-			if (chatbotContainer.classList.contains('show')) {
-				chatbotContainer.classList.remove('show');
-				setTimeout(() => {
-					chatbotContainer.style.display = 'none';
-				}, 300); // Match the transition duration
-			} else {
-				chatbotContainer.style.display = 'block';
-				setTimeout(() => {
-					chatbotContainer.classList.add('show');
-				}, 10); // Small delay to trigger the transition
-			}
-
-			// Apply blur effect to the background
-			if (chatbotContainer.classList.contains('show')) {
-				document.body.classList.add('blur-background');
-			} else {
-				document.body.classList.remove('blur-background');
-			}
+			toggleChatbot();
 		});
-
+	
 		document.getElementById('close-chatbot').addEventListener('click', function () {
-			const chatbotContainer = document.getElementById('chatbot-container');
-			chatbotContainer.classList.remove('show');
-			setTimeout(() => {
-				chatbotContainer.style.display = 'none';
-			}, 300); // Match the transition duration
-			document.body.classList.remove('blur-background'); // Remove blur effect
+			closeChatbot();
 		});
-
+	
+		function toggleChatbot() {
+			const chatbotContainer = document.getElementById('chatbot-container');
+			if (chatbotContainer.classList.contains('show')) {
+				closeChatbot();
+			} else {
+				openChatbot();
+			}
+		}
+	
 		// Initialize the chat when the page loads
 		window.addEventListener('load', initializeChat);
 	</script>
