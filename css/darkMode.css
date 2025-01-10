@@ -29,6 +29,9 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 body.dark h3{
 	color: #fff;
 }
+body.dark h4{
+	color: #fff;
+}
 body.dark .grax_tm_topbar .logo .dark{display: none;}
 body.dark .grax_tm_topbar .logo .light{display: block;}
 body.dark .grax_tm_topbar.animate{
@@ -46,6 +49,9 @@ body.dark .grax_tm_about{
 }
 body.dark .grax_tm_about .right .list ul li span{
 	color: #fff;
+}
+body.dark .grax_tm_title_holder1 span{
+	color:#ffff00;
 }
 body.dark .grax_tm_about .right .list ul li .svg{
 	color: #fff;
