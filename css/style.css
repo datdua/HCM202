@@ -97,7 +97,6 @@ img.svg {
 
 h1,
 h2,
-h4,
 h5,
 h6 {
 	font-weight: 500;
@@ -113,6 +112,15 @@ h3 {
 	color: #000;
 }
 
+h4{
+	font-family: "Montagu Slab";
+	color: #000;
+}
+
+.grax_tm_title_holder1 span{
+	color: #da251d; 
+	font-style: italic;
+}
 h1 {
 	font-size: 45px;
 }
