@@ -27,6 +27,7 @@
 	<link rel="stylesheet" type="text/css" href="css/colors.css" />
 	<link rel="stylesheet" type="text/css" href="css/darkMode.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/popup.css" />
 	<!--[if lt IE 9]>
       <script type="text/javascript" src="js/modernizr.custom.js"></script>
     <![endif]-->
@@ -346,65 +347,348 @@
 		</div>
 		<!-- /ABOUT -->
 
-		<!-- TIMELINE 1 -->
-		<div class="grax_tm_section" id="formation">
-			<div class="timeline-section">
-				<div class="container">
-					<div class="grax_tm_title_holder">
-						<h3>Quá Trình <span>Hình Thành</span></h3>
-					</div>
-					<div class="grax_tm_timeline">
-						<div class="timeline-container">
-							<div class="timeline-block wow fadeInLeft" data-wow-duration="1.5s">
-								<div class="timeline-dot"></div>
-								<div class="timeline-content">
-									<h3>Giai Đoạn Đầu (1911-1920)</h3>
-									<span class="timeline-date">1911-1920</span>
-									<p>Người thanh niên Nguyễn Tất Thành ra đi tìm đường cứu nước, bắt đầu tiếp xúc với
-										các trào lưu tư
-										tưởng tiến bộ trên thế giới.</p>
-								</div>
-							</div>
+<!-- TIMELINE -->
+<div class="grax_tm_section" id="formation">
+    <div class="timeline-section">
+        <div class="container">
+            <div class="grax_tm_title_holder">
+                <h3>Quá Trình <span>Hình Thành</span></h3>
+            </div>
+            <div class="grax_tm_timeline">
+                <div class="timeline-container">
 
-							<div class="timeline-block wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s">
-								<div class="timeline-dot"></div>
-								<div class="timeline-content">
-									<h3>Giai Đoạn Phát Triển (1920-1930)</h3>
-									<span class="timeline-date">1920-1930</span>
-									<p>Tiếp xúc với chủ nghĩa Mác - Lênin và tham gia sáng lập Đảng Cộng sản Pháp, hình
-										thành nền tảng tư
-										tưởng cách mạng.</p>
-								</div>
-							</div>
+                    <!-- Timeline Block 1 -->
+                    <div class="timeline-block wow fadeInLeft" data-wow-duration="1.5s" data-popup="popup" onclick="openPopup(this)">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Giai đoạn trước 1911</h3>
+                            <span class="timeline-date">Trước 1911</span>
+                            <p>
+                                Hình thành tư tưởng yêu nước và chí hướng cứu nước.
+                            </p>
+                        </div>
+                    </div>
 
-							<div class="timeline-block wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.4s">
-								<div class="timeline-dot"></div>
-								<div class="timeline-content">
-									<h3>Giai Đoạn Hoàn Thiện (1930-1945)</h3>
-									<span class="timeline-date">1930-1945</span>
-									<p>Thành lập Đảng Cộng sản Việt Nam và lãnh đạo phong trào cách mạng, phát triển tư
-										tưởng độc lập dân
-										tộc gắn liền với chủ nghĩa xã hội.</p>
-								</div>
-							</div>
+                    <!-- Timeline Block 2 -->
+                    <div class="timeline-block wow fadeInLeft" data-wow-duration="1.5s" data-popup="popup-2" onclick="openPopup(this)">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Giai Đoạn Đầu (1911-1920)</h3>
+                            <span class="timeline-date">1911-1920</span>
+                            <p>Tìm thấy con đường cứu nước, giải phóng dân tộc.</p>
+                        </div>
+                    </div>
 
-							<div class="timeline-block wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.6s">
-								<div class="timeline-dot"></div>
-								<div class="timeline-content">
-									<h3>Giai Đoạn Thực Tiễn (1945-1969)</h3>
-									<span class="timeline-date">1945-1969</span>
-									<p>Lãnh đạo cách mạng Việt Nam, xây dựng và phát triển tư tưởng trong thực tiễn đấu
-										tranh giải phóng
-										dân
-										tộc và xây dựng đất nước.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                    <div class="timeline-block wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s" data-popup="popup-3" onclick="openPopup(this)">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Giai Đoạn Hình Thành (1921-1930)</h3>
+                            <span class="timeline-date">1921-1930</span>
+                            <p>Hình thành cơ bản tư tưởng về cách mạng Việt Nam.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-block wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.4s" data-popup="popup-4" onclick="openPopup(this)">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Giai Đoạn Hoàn Thiện (1930-1945)</h3>
+                            <span class="timeline-date">1930-1945</span>
+                            <p>Vượt qua thử thách, kiên trì giữ vững lập trường cách mạng.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-block wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.6s" data-popup="popup-5" onclick="openPopup(this)">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Giai Đoạn Phát Triển (1945-1969)</h3>
+                            <span class="timeline-date">1945-1969</span>
+                            <p>Tư tưởng HCM tiếp tục phát triển, hoàn thiện.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup Modal 1 -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2 class="popup-title">Giai đoạn trước 1911: Hình thành tư tưởng yêu nước</h2>
+        <div class="popup-description">
+            <p>Chủ tịch Hồ Chí Minh sinh ngày 19-5-1890 trong một gia đình nhà nho yêu nước tại Nghệ An. Người được thừa hưởng và hun đúc những phẩm chất cao đẹp từ truyền thống gia đình, đồng thời tiếp thu được những tư tưởng tiến bộ của thời đại.</p>
+            
+            <h3>Những yếu tố ảnh hưởng đến tư tưởng của Người:</h3>
+            <ul>
+                <li><strong>Gia đình:</strong> Được tiếp thu tư tưởng, lối sống, đức tính cao quý từ cha mẹ và anh em trong gia đình nhà nho yêu nước</li>
+                <li><strong>Quê hương:</strong> Nghệ Tĩnh - vùng đất với bề dày lịch sử đấu tranh chống giặc ngoại xâm và những tấm gương hào kiệt anh hùng</li>
+                <li><strong>Hoàn cảnh xã hội:</strong> Chứng kiến trực tiếp cảnh đồng bào bị thực dân áp bức và sự yếu kém của bộ máy nhà nước phong kiến</li>
+                <li><strong>Bài học lịch sử:</strong> Nhận thức sâu sắc về những hạn chế và nguyên nhân thất bại của các phong trào yêu nước đương thời</li>
+            </ul>
+
+            <h3>Quyết định mang tính bước ngoặt:</h3>
+            <p>Từ những trải nghiệm và quan sát thực tế, Người đã đi đến quyết định quan trọng:</p>
+            <ul>
+                <li>Rời Tổ quốc để tìm hiểu thực chất về những khẩu hiệu Tự do, Bình đẳng, Bác ái mà thực dân Pháp rêu rao</li>
+                <li>Tự mình khám phá và tìm ra con đường cách mạng mới cho dân tộc Việt Nam</li>
+                <li>Mang theo hoài bão sẽ trở về giúp đồng bào khi đã tìm được phương hướng đúng đắn để giải phóng dân tộc</li>
+            </ul>
+
+            <p class="conclusion" style="font-size: 20px;">Giai đoạn này đã đặt nền móng quan trọng cho tư tưởng cách mạng và con đường hoạt động sau này của Chủ tịch Hồ Chí Minh, thể hiện tinh thần yêu nước sâu sắc và quyết tâm tìm ra con đường cứu nước đúng đắn của Người.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Popup Modal 2 -->
+<div id="popup-2" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2 class="popup-title">Thời kỳ 1911 - 1920: Tìm thấy con đường cứu nước, giải phóng dân tộc</h2>
+        <div class="popup-description">
+            <div class="section">
+                <h3>Khởi đầu hành trình</h3>
+                <p>Năm 1911, với ý thức dân tộc sâu sắc và hoài bão cháy bỏng về việc tìm ra con đường cứu nước, giải phóng dân tộc, Nguyễn Tất Thành (sau này là Hồ Chí Minh) đã quyết định rời bến cảng Nhà Rồng, bắt đầu hành trình sang phương Tây. Từ đây, Người không ngừng học hỏi, tìm tòi và mày mò để tìm ra giải pháp cho dân tộc mình.</p>
+            </div>
+
+            <div class="section">
+                <h3>Những trải nghiệm và nhận thức mới</h3>
+                <p>Trong những năm tháng bôn ba nơi xứ người, Bác đã chứng kiến không ít cảnh người lao động bị bóc lột, áp bức. Người nhận ra rằng, ở bất cứ đâu, nhân dân lao động đều có chung khát vọng thoát khỏi ách thống trị, giành lại tự do và nhân phẩm.</p>
+                
+                <p>Những bài học từ các lý tưởng nhân văn như <em>"bốn bể đều là anh em"</em> và <em>"năm châu họp làm một nhà"</em> đã thấm nhuần trong suy nghĩ của Người. Cùng với nỗi xót xa trước cảnh vong nô của các dân tộc bị áp bức, Bác đã hình thành ý thức sâu sắc về sự cần thiết của đoàn kết quốc tế – đoàn kết những người lao động và các dân tộc bị áp bức trên thế giới để đấu tranh vì quyền lợi chung.</p>
+            </div>
+
+            <div class="section">
+                <h3>Quá trình học hỏi và hoạt động</h3>
+                <p>Mặc dù phải đối mặt với muôn vàn khó khăn và thử thách, Bác luôn kiên trì, chịu đựng và không ngừng học hỏi. Người dành thời gian nghiên cứu tình hình các nước, suy ngẫm về những gì đã thấy, đã nghe, và tích cực tham gia các diễn thuyết của những nhà tư tưởng lớn.</p>
+                
+                <div class="highlight-box">
+                    <p>Đặc biệt, năm 1919, Người đã gửi <strong>"Bản Yêu Sách của nhân dân An Nam"</strong> tới Hội nghị Versailles, nhằm tố cáo tội ác của thực dân Pháp, đồng thời kêu gọi sự chú ý của nhân dân thế giới và chính quyền Pháp đối với tình hình Việt Nam và Đông Dương lúc bấy giờ.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Bước ngoặt tư tưởng</h3>
+                <p>Bước ngoặt quan trọng trong tư tưởng của Bác diễn ra khi Người đọc được <strong>"Luận cương về vấn đề dân tộc và thuộc địa"</strong> của Lenin. Ánh sáng từ chủ nghĩa Lenin đã chỉ ra con đường cứu nước – con đường giành độc lập cho dân tộc và tự do cho đồng bào. Đây chính là câu trả lời mà Bác đã tìm kiếm bấy lâu nay.</p>
+            </div>
+
+            <div class="milestone-section">
+                <h3>Dấu mốc lịch sử</h3>
+                <p>Tháng 12 năm 1920, Nguyễn Ái Quốc biểu quyết tán thành việc gia nhập Đệ Tam Quốc tế (Quốc tế Cộng sản) và trở thành một trong những người sáng lập Đảng Cộng sản Pháp.</p>
+            </div>
+
+            <p class="conclusion" style="font-size: 20px;">
+                Sự kiện này không chỉ đánh dấu bước chuyển biến mang tính bước ngoặt trong tư tưởng của Nguyễn Ái Quốc – từ chủ nghĩa yêu nước sang chủ nghĩa Marx-Lenin, từ giác ngộ dân tộc sang giác ngộ giai cấp – mà còn khẳng định sự chuyển đổi của Người từ một người yêu nước thành một chiến sĩ cộng sản kiên trung.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Popup Modal 3 -->
+<div id="popup-3" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2 class="popup-title">Thời kỳ 1921 - 1930: Hình thành cơ bản tư tưởng về cách mạng Việt Nam</h2>
+        <div class="popup-description">
+            <div class="timeline-section1">
+                <h3>Hành trình hoạt động</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">1921-1923:</span> Hoạt động tại Pháp
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">1923-1924:</span> Hoạt động tại Liên Xô
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">1924-1927:</span> Hoạt động tại Trung Quốc
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">1928-1929:</span> Hoạt động tại Thái Lan
+                    </div>
+                </div>
+            </div>
+
+            <div class="intro-section" style="font-size: 20px;">
+                <p>Trong giai đoạn này, Hồ Chí Minh không chỉ tích cực tham gia các hoạt động thực tiễn mà còn viết nhiều bài báo và tác phẩm mang tính lý luận sâu sắc. Người tố cáo tội ác của chủ nghĩa thực dân và phân tích mối quan hệ giữa cách mạng giải phóng thuộc địa với cách mạng vô sản ở chính quốc.</p>
+            </div>
+
+            <div class="theory-section">
+                <h3>Những tư tưởng cốt lõi</h3>
+                
+                <div class="theory-item">
+                    <h4>1. Bản chất của chủ nghĩa thực dân</h4>
+                    <p>Chỉ rõ bản chất "ăn cướp" và "giết người" của chủ nghĩa thực dân, gây ra đau khổ và áp bức cho các dân tộc thuộc địa.</p>
+                </div>
+
+                <div class="theory-item">
+                    <h4>2. Con đường cách mạng</h4>
+                    <p>Khẳng định cách mạng giải phóng dân tộc phải đi theo con đường cách mạng vô sản, là một bộ phận của cách mạng vô sản thế giới.</p>
+                </div>
+
+                <div class="theory-item">
+                    <h4>3. Mối quan hệ giữa các cuộc cách mạng</h4>
+                    <p>Cách mạng thuộc địa và cách mạng vô sản có mối quan hệ khăng khít, hỗ trợ lẫn nhau nhưng không phụ thuộc hoàn toàn.</p>
+                </div>
+
+                <div class="theory-item">
+                    <h4>4. Tính chất của cách mạng thuộc địa</h4>
+                    <p>Là cuộc "dân tộc cách mệnh" nhằm đánh đuổi giặc ngoại xâm, giành độc lập và tự do cho dân tộc.</p>
+                </div>
+
+                <div class="theory-item">
+                    <h4>5. Vai trò của nông dân</h4>
+                    <p>Nhấn mạnh tầm quan trọng của việc lôi kéo tầng lớp nông dân và xây dựng khối liên minh công – nông làm động lực chính.</p>
+                </div>
+
+                <div class="theory-item">
+                    <h4>6. Vai trò của Đảng lãnh đạo</h4>
+                    <p>Khẳng định sự cần thiết của một Đảng cách mạng theo chủ nghĩa Marx-Lenin, có tổ chức vững mạnh và đội ngũ cán bộ tận tụy.</p>
+                </div>
+
+                <div class="theory-item">
+                    <h4>7. Tầm quan trọng của quần chúng</h4>
+                    <p>Xác định cách mạng là sự nghiệp của toàn thể quần chúng nhân dân, không phải của cá nhân hay nhóm người.</p>
+                </div>
+            </div>
+
+            <p class="conclusion" style="font-size: 20px;">
+                Những tư tưởng cốt lõi này được Hồ Chí Minh truyền tải qua các tác phẩm, bài viết và đưa về nước, trở thành "chất xúc tác" mạnh mẽ thúc đẩy phong trào dân tộc phát triển theo xu hướng mới, phù hợp với yêu cầu của thời đại.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Popup Modal 4 -->
+<div id="popup-4" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2 class="popup-title">Thời kỳ 1930 - 1945: Vượt qua thử thách, kiên trì giữ vững lập trường cách mạng</h2>
+        <div class="popup-description">
+            <div class="section">
+                <h3>Hội nghị lần thứ nhất Ban Chấp hành Trung ương lâm thời của Đảng (1930)</h3>
+                <p>Cuối những năm 20, đầu những năm 30, khuynh hướng “tả” đã tác động trực tiếp đến cách mạng Việt Nam. Hội nghị Trung ương đã quyết định đổi tên Đảng thành Đảng Cộng sản Đông Dương, chỉ trích và thủ tiêu các văn kiện Chánh Cương vắn tắt và Sách lược vắn tắt của Nguyễn Ái Quốc, cho rằng chúng chỉ tập trung vào việc phản đế mà bỏ quên lợi ích giai cấp.</p>
+            </div>
+
+            <div class="section">
+                <h3>Quan điểm kiên định của Nguyễn Ái Quốc</h3>
+                <p>Nguyễn Ái Quốc bảo vệ quan điểm về mối quan hệ giữa giai cấp và dân tộc, cách mạng giải phóng thuộc địa và cách mạng vô sản. Người phản đối khuynh hướng “tả” và những biệt phái trong Đảng, khẳng định sự cần thiết của việc đặt nhiệm vụ giải phóng dân tộc lên hàng đầu.</p>
+            </div>
+
+            <div class="section">
+                <h3>Đại hội VII Quốc tế Cộng sản (1935)</h3>
+                <p>Đại hội này đã phê phán khuynh hướng “tả”, ủng hộ mở rộng mặt trận dân tộc thống nhất chống phát xít và khôi phục các văn kiện do Nguyễn Ái Quốc soạn thảo. Từ đây, đường lối cách mạng Việt Nam đã được điều chỉnh phù hợp với tình hình thực tiễn.</p>
+            </div>
+
+            <div class="section">
+                <h3>Mặt trận Dân chủ Đông Dương (1936 - 1939)</h3>
+                <p>Mặt trận được thành lập, ưu tiên nhiệm vụ giải phóng dân tộc. Hồ Chí Minh theo dõi sát tình hình trong nước và chỉ đạo cách mạng, đồng thời đề nghị Quốc tế Cộng sản cho phép trở về quê hương để lãnh đạo phong trào.</p>
+            </div>
+
+            <div class="section">
+                <h3>Ngày trở về và Hội nghị Trung ương lần thứ tám (1941)</h3>
+                <p>Ngày 28/1/1941, Hồ Chí Minh trở về Việt Nam sau 30 năm hoạt động ở nước ngoài. Tại Hội nghị Trung ương lần thứ tám (tháng 5/1941), Đảng ta hoàn chỉnh chiến lược cách mạng, tập trung vào giải phóng dân tộc, tạo tiền đề cho thắng lợi của Cách mạng Tháng Tám 1945.</p>
+            </div>
+
+            <div class="milestone-section">
+                <h3>Tuyên ngôn Độc lập (1945)</h3>
+                <p>Ngày 2/9/1945, Hồ Chí Minh đọc Tuyên ngôn Độc lập, tuyên bố sự ra đời của nước Việt Nam Dân chủ Cộng hòa, khẳng định:</p>
+                <blockquote>“Tất cả các dân tộc trên thế giới đều bình đẳng; dân tộc nào cũng có quyền sống, quyền sung sướng và quyền tự do.”</blockquote>
+                <div class="video-container">
+                      <iframe width="100%" height="450" src="https://www.youtube.com/embed/SCPphVYDPDk?si=ZRE0Tc0KTe_4yWvq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="conclusion" style="font-size: 20px;">
+                <p style="font-size: 30px;">Sự ra đời của nước Việt Nam Dân chủ Cộng hòa đánh dấu:</p>
+                <ul>
+                    <li>Thắng lợi của chủ nghĩa Marx - Lenin được vận dụng sáng tạo tại Việt Nam.</li>
+                    <li>Thành công của tư tưởng Hồ Chí Minh về độc lập dân tộc gắn liền với chủ nghĩa xã hội.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Popup Modal 5 -->
+<div id="popup-5" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2 class="popup-title">Thời kỳ 1945 - 1969: Tư tưởng Hồ Chí Minh tiếp tục phát triển và hoàn thiện</h2>
+        <div class="popup-description">
+
+            <img src="https://baotanglichsu.vn/DataFiles/Uploaded/image/lam-thoi-1.jpg" alt="Hồ Chí Minh 1945" style="width: 100%; margin-bottom: 20px;">
+            <div class="section">
+                <h3>Khó khăn và thử thách</h3>
+                <p>Ngày 23 tháng 9 năm 1945, khi quân Pháp quay lại xâm lược Việt Nam, với âm mưu bóp chết nước Việt Nam Dân chủ Cộng hòa còn non trẻ, đất nước lại rơi vào tình thế hiểm nghèo. Đứng trước tình hình "ngàn cân treo sợi tóc", Chủ tịch Hồ Chí Minh, với tầm nhìn sâu rộng và khả năng lãnh đạo tài ba, đã dũng cảm chèo lái con thuyền cách mạng Việt Nam vượt qua sóng gió, chiến thắng các thử thách cam go, để đưa đất nước tiến lên phía trước.</p>
+            </div>
+
+            <div class="section">
+                <h3>Củng cố chính quyền và đối ngoại</h3>
+                <p>Trong thời kỳ này, Chủ tịch Hồ Chí Minh đã tập trung củng cố chính quyền non trẻ, đồng thời đẩy lùi giặc đói, giặc dốt, khắc phục tình trạng thiếu hụt tài chính, duy trì sự ổn định cho đất nước. Về mặt đối ngoại, Người đã vận dụng linh hoạt các chính sách "thêm bạn, bớt thù" và "dĩ bất biến, ứng vạn biến", tranh thủ mọi thời gian và cơ hội để xây dựng lực lượng, chuẩn bị cho cuộc kháng chiến lâu dài và gian khổ sắp tới.</p>
+            </div>
+
+            <div class="section">
+                <h3>Kháng chiến chống thực dân Pháp</h3>
+                <p>Ngày 19 tháng 12 năm 1946, Hồ Chí Minh phát động cuộc kháng chiến toàn quốc chống thực dân Pháp. Từ thời điểm này, Bác Hồ trở thành linh hồn của cuộc kháng chiến. Người không chỉ chăm lo xây dựng Đảng mà còn chống lại tệ quan liêu, mệnh lệnh hành chính, đồng thời xây dựng đạo đức cách mạng và phát động phong trào thi đua ái quốc rộng khắp trong toàn dân.</p>
+            </div>
+
+            <div class="section">
+                <h3>Đại hội Đảng và kết quả kháng chiến</h3>
+                <p>Năm 1951, Đại hội đại biểu toàn quốc lần thứ II của Đảng Lao động Việt Nam được tổ chức, đánh dấu một bước tiến quan trọng trong quá trình hoạt động công khai của Đảng. Đại hội này đã đưa ra quyết định thành lập các đảng riêng tại Campuchia và Lào, kịp thời lãnh đạo các cuộc cách mạng ở mỗi nước. Đồng thời, Đại hội cũng đề ra các chủ trương, đường lối, giải quyết tốt các vấn đề quan hệ giai cấp, động viên toàn Đảng và toàn dân trong cuộc kháng chiến chống thực dân Pháp và đế quốc Mỹ, đưa cách mạng Việt Nam tới thắng lợi.</p>
+            </div>
+
+            <div class="section">
+                <h3>Thắng lợi và hòa bình</h3>
+                <p>Năm 1954, dưới sự lãnh đạo tài tình của Đảng và Chủ tịch Hồ Chí Minh, cuộc kháng chiến chống thực dân Pháp đã hoàn toàn thắng lợi. Hiệp định Giơnevơ được ký kết, miền Bắc hoàn toàn độc lập, nhưng đất nước bị chia cắt thành hai miền do âm mưu xâm lược của đế quốc Mỹ và tay sai của chúng.</p>
+            </div>
+
+            <div class="section">
+                <h3>Xác định kẻ thù và nhiệm vụ cách mạng</h3>
+                <p>Dưới tình thế đất nước bị chia cắt, Bác Hồ và Đảng Cộng sản Việt Nam đã chủ trương xác định kẻ thù mới, đưa ra nhiệm vụ cho cả hai miền Nam và Bắc. Miền Bắc được xác định là khu vực cách mạng xã hội chủ nghĩa, đóng vai trò quyết định trong sự nghiệp phát triển của cách mạng Việt Nam, hướng tới mục tiêu thống nhất đất nước. Miền Nam, với nhiệm vụ cách mạng dân tộc dân chủ nhân dân, là nơi quyết định trực tiếp sự nghiệp giải phóng hoàn toàn, thực hiện hòa bình và thống nhất đất nước.</p>
+            </div>
+
+            <div class="conclusion" style="font-size: 20px;">
+                <p style="font-size: 20px;">Từ thực tiễn cách mạng, trong suốt quá trình lãnh đạo đất nước, tư tưởng Hồ Chí Minh đã được tiếp tục bổ sung và phát triển, hình thành nên một hệ thống quan điểm lý luận vững chắc về cách mạng Việt Nam. Đó là tư tưởng về chủ nghĩa xã hội và con đường quá độ lên chủ nghĩa xã hội; tư tưởng về Nhà nước của dân, do dân và vì dân; tư tưởng về Đảng Cộng sản Việt Nam và việc xây dựng Đảng; cũng như các tư tưởng quan trọng khác về cách mạng và phát triển đất nước. Những quan điểm này đã trở thành nền tảng lý luận vững chắc cho sự nghiệp cách mạng, giải phóng dân tộc và xây dựng chủ nghĩa xã hội ở Việt Nam.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+function openPopup(element) {
+    const popupId = element.getAttribute('data-popup'); // Get the popup ID from the data attribute
+    const popup = document.getElementById(popupId);
+    popup.style.display = 'block';
+    // Trigger reflow
+    void popup.offsetWidth;
+    popup.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closePopup() {
+    const popups = document.querySelectorAll('.popup'); // Get all popups
+    popups.forEach(popup => {
+        popup.classList.remove('active');
+        setTimeout(() => {
+            popup.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }, 500); // Match with transition duration
+    });
+}
+
+// Close popup when clicking outside
+window.onclick = function(event) {
+    const popups = document.querySelectorAll('.popup');
+    popups.forEach(popup => {
+        if (event.target == popup) {
+            closePopup();
+        }
+    });
+}
+</script>
 
 	<style>
 		.timeline-section {
