@@ -32,6 +32,12 @@ body.dark h3{
 body.dark h4{
 	color: #fff;
 }
+body.dark .accordion_header{
+	background: #e54b4b;
+}
+body.dark .accordion_header .icon{
+	color: #fff;
+}
 body.dark .grax_tm_topbar .logo .dark{display: none;}
 body.dark .grax_tm_topbar .logo .light{display: block;}
 body.dark .grax_tm_topbar.animate{
