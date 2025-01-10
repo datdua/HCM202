@@ -81,7 +81,7 @@ img.svg{
 	clear:both;
 }
 
-h1, h2, h4, h5, h6{
+h1, h2, h5, h6{
 	font-weight:500;
 	line-height: 1.4;
 	font-family: "Xanh mono";
@@ -93,6 +93,16 @@ h3{
 	line-height: 1.2;
 	font-family: "Montagu Slab";
 	color: #000;
+}
+
+h4{
+	font-family: "Montagu Slab";
+	color: #000;
+}
+
+.grax_tm_title_holder1 span{
+	color: #da251d; 
+	font-style: italic;
 }
 
 h1 { font-size: 45px; }
@@ -1156,7 +1166,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	padding-top: 90px;
+	padding-top: 50px;
 }
 .grax_tm_news .news_list ul{
 	margin: 0px 0px 0px -50px;
@@ -1344,6 +1354,7 @@ body.modal{
 	margin-bottom: 15px;
 }
 .grax_tm_modalbox_news .description blockquote{
+	font-weight: 520;
 	font-style: italic;
 	color: #000;
 	border-left: 2px solid #e54b4b;
