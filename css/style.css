@@ -112,15 +112,16 @@ h3 {
 	color: #000;
 }
 
-h4{
+h4 {
 	font-family: "Montagu Slab";
 	color: #000;
 }
 
-.grax_tm_title_holder1 span{
-	color: #da251d; 
+.grax_tm_title_holder1 span {
+	color: #da251d;
 	font-style: italic;
 }
+
 h1 {
 	font-size: 45px;
 }
@@ -1163,13 +1164,21 @@ h6 {
 .grax_tm_portfolio ul {
 	margin: 0px 0px 0px -50px;
 	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+	margin: 0;
+	padding: 0;
 }
 
 .grax_tm_portfolio ul li {
-	margin: 0px 0px 50px 0px;
 	float: left;
 	width: 33%;
 	padding-left: 50px;
+	flex: 0 0 calc(33.333% - 17px);
+	margin: 0 0 25px 0 !important;
+	padding: 0;
+	transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .grax_tm_portfolio ul li .list_inner {
@@ -1180,6 +1189,11 @@ h6 {
 	position: relative;
 	border-radius: 5px;
 	overflow: hidden;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+	overflow: hidden;
+	transform: translateY(0);
+	transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .grax_tm_portfolio .image {
@@ -1226,6 +1240,8 @@ h6 {
 .grax_tm_portfolio ul li .list_inner:hover .overlay {
 	opacity: 1;
 	visibility: visible;
+	transform: translateY(-8px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .grax_tm_portfolio .details {
@@ -1257,6 +1273,8 @@ h6 {
 .grax_tm_portfolio .details h3 {
 	font-size: 18px;
 	font-weight: 600;
+	margin: 0;
+	transition: color 0.3s ease;
 }
 
 .grax_tm_full_link {
@@ -1623,6 +1641,13 @@ h6 {
 .grax_tm_news .news_list ul li .details .date span {
 	position: relative;
 	margin-left: 11px;
+	padding: 5px 10px;
+	border-radius: 4px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	display: inline-block;
+	margin-bottom: 10px;
 }
 
 .grax_tm_news .news_list ul li .details .date span:before {
@@ -2862,7 +2887,7 @@ body.dark .grax_tm_settings .cursor li .svg,
 	border-bottom: 2px solid #e54b4b;
 	cursor: pointer;
 	padding: 2px 4px;
-	border-radius: 2px; 
+	border-radius: 2px;
 	transition: background-color 0.2s;
 	color: #e54b4b;
 }
@@ -2888,15 +2913,15 @@ body.dark .grax_tm_settings .cursor li .svg,
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 	display: none;
 	opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    z-index: 1000;
+	transform: translateY(20px);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	z-index: 1000;
 }
 
 #chatbot-container.show {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
+	display: block;
+	opacity: 1;
+	transform: translateY(0);
 }
 
 #chatbot-header {
@@ -2915,7 +2940,7 @@ body.dark .grax_tm_settings .cursor li .svg,
 	overflow-y: auto;
 	padding: 10px;
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 }
 
 #chatbot-input {
@@ -2941,55 +2966,59 @@ body.dark .grax_tm_settings .cursor li .svg,
 
 .message {
 	margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 4px; 
-    word-wrap: break-word;
+	padding: 10px;
+	border-radius: 4px;
+	word-wrap: break-word;
 }
 
 .user-message {
 	background: #fa6868;
-    color: white;
-    text-align: right;
-    align-self: flex-end;
+	color: white;
+	text-align: right;
+	align-self: flex-end;
 }
 
 .bot-message {
 	background: #e9ecef;
-    color: #212529;
-    text-align: left;
+	color: #212529;
+	text-align: left;
 	align-self: flex-start;
 }
 
 .loading-dots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .dot {
-    width: 8px;
-    height: 8px;
-    margin: 0 4px;
-    background-color: #3498db;
-    border-radius: 50%;
-    animation: dot-blink 1s infinite;
+	width: 8px;
+	height: 8px;
+	margin: 0 4px;
+	background-color: #3498db;
+	border-radius: 50%;
+	animation: dot-blink 1s infinite;
 }
 
 .dot:nth-child(2) {
-    animation-delay: 0.2s;
+	animation-delay: 0.2s;
 }
 
 .dot:nth-child(3) {
-    animation-delay: 0.4s;
+	animation-delay: 0.4s;
 }
 
 @keyframes dot-blink {
-    0%, 80%, 100% {
-        opacity: 0;
-    }
-    40% {
-        opacity: 1;
-    }
+
+	0%,
+	80%,
+	100% {
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 1;
+	}
 }
 
 /* Ensure the button is visible */
@@ -3122,6 +3151,315 @@ body.dark .grax_tm_settings .cursor li .svg,
 	font-weight: 600;
 }
 
+.timeline {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 40px auto;
+	position: relative;
+	max-width: 1100px;
+}
+
+/* Removed the central timeline (.timeline::before) */
+
+.timeline__event {
+	margin: 20px 0;
+	position: relative;
+	display: flex;
+	width: 100%;
+	border-radius: 6px;
+	min-height: 150px;
+}
+
+.timeline__event:nth-child(odd) {
+	flex-direction: row-reverse;
+	align-self: flex-start;
+}
+
+.timeline__event:nth-child(even) {
+	flex-direction: row;
+	align-self: flex-start;
+}
+
+/* Connection from icon to title */
+.timeline__event .timeline__event__icon::after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	background-color: rgba(229, 75, 75, 0.4);
+	z-index: 1;
+	top: 50%;
+	width: 20px;
+  }
+
+  .timeline__event:nth-child(odd) .timeline__event__icon::after {
+	left: -20px; /* Shortened from -30px */
+  }
+  
+  .timeline__event:nth-child(even) .timeline__event__icon::after {
+	right: -20px; /* Shortened from -30px */
+  }
+
+/* Connection from description to next icon */
+.timeline__event:not(:last-child)::after {
+	content: '';
+  position: absolute;
+  background-color: rgba(229, 75, 75, 0.4);
+  z-index: 0;
+  width: 2px;
+  height: 100%;
+}
+
+/* Position and style the connection for odd events */
+.timeline__event:nth-child(odd):not(:last-child)::after {
+	height: calc(100% + 20px);
+  left: 28px; /* Position it at the icon's center */
+  top: 70px; /* Start below the icon */
+}
+
+/* Position and style the connection for even events */
+.timeline__event:nth-child(even):not(:last-child)::after {
+	height: calc(100% + 20px);
+  right: 28px; /* Position it at the icon's center */
+  top: 70px; /* Start below the icon */
+}
+
+/* Removed horizontal connector from central timeline to icon 
+   (.timeline__event .timeline__event__icon::before) */
+
+.timeline__event:nth-child(odd) .timeline__event__date {
+	border-radius: 0 6px 6px 0;
+}
+
+.timeline__event:nth-child(odd) .timeline__event__content {
+	border-radius: 6px 0 0 6px;
+}
+
+.timeline__event:nth-child(even) .timeline__event__date {
+	border-radius: 6px 0 0 6px;
+}
+
+.timeline__event:nth-child(even) .timeline__event__content {
+	border-radius: 0 6px 6px 0;
+}
+
+.timeline__event__title {
+	font-size: 1.4rem;
+	font-weight: 600;
+	color: #e54b4b;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.timeline__event__content {
+	padding: 24px;
+	box-shadow: 0 20px 40px -12px rgba(50, 50, 93, 0.25),
+		0 18px 36px -18px rgba(0, 0, 0, 0.25);
+	background: #fff;
+	width: calc(70% - 80px);
+	transition: all 0.3s ease;
+	position: relative;
+}
+
+.timeline__event__content:hover {
+	box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.3),
+		0 18px 36px -18px rgba(0, 0, 0, 0.3);
+	transform: translateY(-3px);
+}
+
+.timeline__event__date {
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 600;
+	background: #e54b4b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	padding: 0 20px;
+	min-width: 160px;
+}
+
+.timeline__event__icon {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #e54b4b;
+	padding: 15px;
+	align-self: center;
+	margin: 0 20px;
+	background: rgba(229, 75, 75, 0.2);
+	border-radius: 100%;
+	width: 70px;
+	height: 70px;
+	z-index: 10;
+	box-shadow: 0 10px 30px -5px rgba(229, 75, 75, 0.3);
+	transition: all 0.3s ease;
+}
+
+.timeline__event__icon:hover {
+	background: rgba(229, 75, 75, 0.3);
+	transform: scale(1.05);
+}
+
+.timeline__event__icon img {
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
+}
+
+.timeline__event__description {
+	color: #525f7f;
+	line-height: 1.6;
+}
+
+.timeline__event__description p {
+	margin: 0;
+}
+
+.timeline__event--type1 .timeline__event__icon {
+	background: rgba(229, 75, 75, 0.2);
+	color: #e54b4b;
+}
+
+.timeline__event--type2 .timeline__event__icon {
+	background: rgba(75, 123, 229, 0.2);
+	color: #4b7be5;
+}
+
+.timeline__event--type2 .timeline__event__date {
+	background: #4b7be5;
+}
+
+.timeline__event--type2 .timeline__event__title {
+	color: #4b7be5;
+}
+
+.timeline__event--type3 .timeline__event__icon {
+	background: rgba(36, 180, 126, 0.2);
+	color: #24b47e;
+}
+
+.timeline__event--type3 .timeline__event__date {
+	background: #24b47e;
+}
+
+.timeline__event--type3 .timeline__event__title {
+	color: #24b47e;
+}
+
+.timeline__event--type4 .timeline__event__icon {
+	background: rgba(187, 83, 218, 0.2);
+	color: #bb53da;
+}
+
+.timeline__event--type4 .timeline__event__date {
+	background: #bb53da;
+}
+
+.timeline__event--type4 .timeline__event__title {
+	color: #bb53da;
+}
+
+.timeline__event--type5 .timeline__event__icon {
+	background: rgba(255, 153, 0, 0.2);
+	color: #ff9900;
+}
+
+.timeline__event--type5 .timeline__event__date {
+	background: #ff9900;
+}
+
+.timeline__event--type5 .timeline__event__title {
+	color: #ff9900;
+}
+
+.grax_tm_section#formation .container {
+	max-width: 100%;
+	padding: 0 40px;
+}
+
+/* Improved mobile responsiveness */
+@media (max-width: 768px) {
+	.timeline__event {
+		flex-direction: column !important;
+		width: calc(100% - 60px) !important;
+		margin-left: 60px !important;
+	}
+
+	.timeline__event::after,
+	.timeline__event .timeline__event__icon::after {
+		display: none;
+		/* Hide connecting lines on mobile */
+	}
+
+	.timeline__event:nth-child(odd) .timeline__event__content,
+	.timeline__event:nth-child(even) .timeline__event__content,
+	.timeline__event:nth-child(odd) .timeline__event__date,
+	.timeline__event:nth-child(even) .timeline__event__date {
+		border-radius: 0;
+	}
+
+	.timeline__event__content {
+		width: 100% !important;
+		margin-bottom: 0 !important;
+	}
+
+	.timeline__event__icon {
+		position: absolute;
+		left: -35px;
+		top: 20px;
+		transform: translateX(-50%);
+		width: 50px;
+		height: 50px;
+		margin: 0;
+	}
+
+	.timeline__event__date {
+		width: 100%;
+		padding: 15px !important;
+		border-radius: 6px 6px 0 0 !important;
+	}
+}
+
+/* Animation classes */
+.fadeInUp {
+	animation: fadeInUp 1s ease both;
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.delay-1s {
+	animation-delay: 0.2s;
+}
+
+.delay-2s {
+	animation-delay: 0.4s;
+}
+
+.delay-3s {
+	animation-delay: 0.6s;
+}
+
+.delay-4s {
+	animation-delay: 0.8s;
+}
+
+.delay-5s {
+	animation-delay: 1s;
+}
 
 /*---------------------------------------------------*/
 /*	14) GRAX MEDIA QUERIES (FOR SMALL DEVIVES)
