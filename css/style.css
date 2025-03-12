@@ -3190,38 +3190,37 @@ body.dark .grax_tm_settings .cursor li .svg,
 	z-index: 1;
 	top: 50%;
 	width: 20px;
-  }
+}
 
-  .timeline__event:nth-child(odd) .timeline__event__icon::after {
-	left: -20px; /* Shortened from -30px */
-  }
-  
-  .timeline__event:nth-child(even) .timeline__event__icon::after {
-	right: -20px; /* Shortened from -30px */
-  }
+.timeline__event:nth-child(odd) .timeline__event__icon::after {
+	left: -20px;
+	/* Shortened from -30px */
+}
 
-/* Connection from description to next icon */
+.timeline__event:nth-child(even) .timeline__event__icon::after {
+	right: -20px;
+	/* Shortened from -30px */
+}
+
 .timeline__event:not(:last-child)::after {
 	content: '';
-  position: absolute;
-  background-color: rgba(229, 75, 75, 0.4);
-  z-index: 0;
-  width: 2px;
-  height: 100%;
+	position: absolute;
+	background-color: rgba(229, 75, 75, 0.4);
+	z-index: 0;
+	width: 2px;
+	height: 100%;
 }
 
-/* Position and style the connection for odd events */
 .timeline__event:nth-child(odd):not(:last-child)::after {
-	height: calc(100% + 20px);
-  left: 28px; /* Position it at the icon's center */
-  top: 70px; /* Start below the icon */
+	height: calc(45% + 20px);
+	left: 28px;
+	top: 150px;
 }
 
-/* Position and style the connection for even events */
 .timeline__event:nth-child(even):not(:last-child)::after {
-	height: calc(100% + 20px);
-  right: 28px; /* Position it at the icon's center */
-  top: 70px; /* Start below the icon */
+	height: calc(45% + 20px);
+	right: 28px;
+	top: 150px;
 }
 
 /* Removed horizontal connector from central timeline to icon 
