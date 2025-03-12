@@ -256,16 +256,17 @@
 		/* Blob Card Container */
 		.blob-card-container {
 			display: flex;
-			justify-content: center;
-			gap: 40px;
+			justify-content: space-between;
 			flex-wrap: wrap;
+			gap: 30px;
 			margin: 40px 0;
+			width: 100%;
 		}
 
 		/* Card styling */
 		.card {
 			position: relative;
-			width: 280px;
+			width: calc(50% - 15px);
 			height: 350px;
 			border-radius: 14px;
 			z-index: 1;
@@ -277,6 +278,8 @@
 			box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 			cursor: pointer;
 			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			margin-bottom: 30px;
+			/* Added to ensure vertical spacing between rows */
 		}
 
 		.card:hover {
@@ -288,8 +291,8 @@
 			position: absolute;
 			top: 5px;
 			left: 5px;
-			width: 270px;
-			height: 340px;
+			width: calc(100% - 10px);
+			height: calc(100% - 10px);
 			z-index: 2;
 			background: rgba(255, 255, 255, .95);
 			backdrop-filter: blur(24px);
@@ -726,59 +729,182 @@
 							</div>
 						</div>
 					</div>
+					<div class="grax_tm_title_holder">
+						<h3>Xây dựng hậu phương chống chiến tranh phá hoại của <span>đế quốc Mỹ</span> ở Miền Bắc </h3>
+					</div>
+					<!-- <h4 style="margin: 40px 0 50px;">Ở miền Bắc</span></h4> -->
+					<div class="flip-card-container">
+						<div class="flip-card">
+							<img src="img/news/vinhbacbo.jpg" alt="Miền Bắc" class="card-icon">
+							<div class="flip-card__content">
+								<p class="flip-card__description">Sau <span class="highlight-text" ,
+										data-keyword="sự kiện Vịnh Bắc Bộ">sự kiện Vịnh Bắc Bộ ngày 5-8-1964</span> , Mỹ
+									bắt đầu cuộc
+									chiến tranh phá hoại miền Bắc bằng không quân và hải quân, với mục đích đưa miền Bắc
+									trở về “thời kỳ đồ đá”, phá hủy công cuộc xây dựng chủ nghĩa xã hội, ngăn chặn sự
+									chi viện của miền Bắc cho miền Nam, và đè bẹp ý chí kháng chiến của nhân dân Việt
+									Nam. Tuy nhiên, thực tế đã chứng minh rằng Mỹ không thể đạt được mục tiêu này.</p>
+							</div>
+						</div>
+						<div class="flip-card">
+							<img src="img/news/banchaphanhtrunguong.jpg" alt="Miền Bắc" class="card-icon">
+							<div class="flip-card__content">
+								<p class="flip-card__description">Trước tình hình đó, Ban Chấp hành Trung ương Đảng đã
+									kịp thời chuyển hướng chiến lược, đề ra các nhiệm vụ cụ thể cho miền Bắc:
+								<ul>
+									<li><span class="highlight-text" data-keyword="Chuyển hướng kinh tế">Chuyển hướng
+											kinh tế </span> phù hợp với điều kiện chiến tranh.</li>
+									<li><span class="highlight-text" data-keyword="Tăng cường lực lượng quốc phòng">Tăng
+											cường
+											lực lượng quốc phòng
+										</span> để đối phó với tình hình mới.</li>
+									<li><span class="highlight-text" data-keyword="Chi viện tối đa cho miền Nam">Chi
+											viện tối đa cho miền Nam </span> để đánh bại địch trên chiến trường.</li>
+									<li><span class="highlight-text"
+											data-keyword="Chuyển hướng tư tưởng và tổ chức">Chuyển
+											hướng tư tưởng và tổ chức</span> phù hợp với yêu cầu mới.</li>
+								</ul>
+								</p>
+							</div>
+						</div>
+						<div class="flip-card">
+							<img src="img/news/loikeugoi.jpg" alt="Miền Bắc" class="card-icon">
+							<div class="flip-card__content">
+								<p class="flip-card__description">Lời kêu gọi của Chủ tịch Hồ Chí Minh ngày 17-7-1966:
+									“Chiến tranh có thể kéo dài 5 năm, 10 năm, 20 năm hoặc lâu hơn nữa. Hà Nội, Hải
+									Phòng và một số thành phố, xí nghiệp có thể bị tàn phá, song nhân dân Việt Nam quyết
+									không sợ. Không có gì quý hơn độc lập, tự do” đã thổi bùng tinh thần quyết tâm của
+									quân và dân miền Bắc. Các phong trào thi đua yêu nước như <span
+										class="highlight-text" data-keyword="Phong trào Ba Sẵn Sàng">“Ba sẵn
+										sàng”</span> của thanh
+									niên, <span class="highlight-text" data-keyword="Phong trào Ba Đảm Đang">“Ba đảm
+										đang”</span> của phụ nữ, <span class="highlight-text"
+										data-keyword="Phong trào Tay Cày Tay Súng">“Tay cày tay súng”</span> của nông
+									dân, <span class="highlight-text" data-keyword="Phong trào Tay Cày Tay Súng">“Tay
+										búa tay súng”</span>
+									của công nhân, cùng khẩu hiệu <span class="highlight-text" data-keyword="Khẩu hiệu “Thóc không thiếu một cân, quân không thiếu một
+									người” ">“Thóc không thiếu một cân, quân không thiếu một
+										người”</span> , giao thông vận tải <span class="highlight-text"
+										data-keyword="Khẩu hiệu “Xe chưa qua, nhà không tiếc”"> “Xe chưa qua, nhà không
+										tiếc”</span>,…..
+									đã trở thành động lực mạnh mẽ cho cuộc chiến đấu.
+								</p>
+								<ul>
+									<span class="highlight-text"
+										data-keyword="Tinh thần: “Quyết tâm thắng giặc Mỹ xâm lược”, “Tất cả vì miền Nam ruột thịt”"
+										style="font-weight: bold;"> => Tinh thần: “Quyết tâm thắng giặc Mỹ xâm lược”,
+										“Tất
+										cả vì miền Nam ruột thịt”.</span>
+								</ul>
+							</div>
+						</div>
+						<div class="master-flip-card">
+							<div class="master-flip-card__inner">
+								<!-- Front of master card -->
+								<div class="master-flip-card__front">
+									<img src="img/news/mienbac.jpg" alt="Main Card" class="master-card-image">
+									<h2 class="master-card-title">Giai đoạn 1965-1968</h2>
+								</div>
 
-					<h4 style="margin: 40px 0 20px;">Nhân Tố <span>Chủ Quan</span></h4>
+								<!-- Back of master card - contains mini cards -->
+								<div class="master-flip-card__back">
+									<div class="mini-cards-container">
+										<!-- Mini Card 1 -->
+										<div class="mini-flip-card">
+											<div class="mini-flip-card__inner">
+												<div class="mini-flip-card__front">
+													<img src="img/news/basansang.jpg" alt="Ba Sẵn Sàng"
+														class="card-icon">
+												</div>
+												<div class="mini-flip-card__back">
+													<h3 class="mini-card-title">Ba Sẵn Sàng</h3>
+												</div>
+											</div>
+										</div>
 
-					<div class="blob-card-container">
-						<!-- Card 1: Khả Năng Tư Duy -->
-						<div class="card" data-news-id="chyquan-0">
-							<div class="bg1">
-								<div class="card-content">
-									<img src="img/news/5.jpg" alt="Khả Năng Tư Duy">
-									<h3>Khả Năng Tư Duy Và Trí Tuệ</h3>
-									<p>Bác đã không ngừng quan sát, nhận xét thực tiễn, khám phá các quy luật vận động
-										xã hội.</p>
+										<!-- Mini Card 2 -->
+										<div class="mini-flip-card">
+											<div class="mini-flip-card__inner">
+												<div class="mini-flip-card__front">
+													<img src="img/news/badamdang.png" alt="Ba Đảm Đang"
+														class="card-icon">
+												</div>
+												<div class="mini-flip-card__back">
+													<h3 class="mini-card-title">Ba Đảm Đang</h3>
+												</div>
+											</div>
+										</div>
+
+										<!-- Mini Card 3 -->
+										<div class="mini-flip-card">
+											<div class="mini-flip-card__inner">
+												<div class="mini-flip-card__front">
+													<img src="img/news/taycaytaysung.jpg" alt="Tay Cày Tay Súng"
+														class="card-icon">
+												</div>
+												<div class="mini-flip-card__back">
+													<h3 class="mini-card-title">Tay Cày Tay Súng</h3>
+												</div>
+											</div>
+										</div>
+
+										<!-- Mini Card 4 -->
+										<div class="mini-flip-card">
+											<div class="mini-flip-card__inner">
+												<div class="mini-flip-card__front">
+													<img src="img/news/xechuaquanhakhongtiec.jpg"
+														alt="Xe Chưa Qua, Nhà Không Tiếc" class="card-icon">
+												</div>
+												<div class="mini-flip-card__back">
+													<h3 class="mini-card-title">Xe Chưa Qua, Nhà Không Tiếc</h3>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="blob" style="background-color: rgb(255, 231, 52);"></div>
+						</div>
+					</div>
+					<div class="circle-container">
+						<!-- Quarter 1 -->
+						<div class="quarter quarter-1">
+							<div class="quarter-content">
+								<p class="quarter-text">Không giảm sút mà còn phát triển, với 4.655 hợp tác
+									xã được trang bị cơ khí nhỏ, phong trào thâm canh tăng vụ được đẩy mạnh.</p>
+								<h3>Nông nghiệp</h3>
+							</div>
 						</div>
 
-						<!-- Card 2: Phẩm Chất Đạo Đức -->
-						<div class="card" data-news-id="chyquan-1">
-							<div class="bg1">
-								<div class="card-content">
-									<img src="img/news/6.jpg" alt="Phẩm Chất Đạo Đức">
-									<h3>Phẩm Chất Đạo Đức</h3>
-									<p>Tư duy độc lập, tự chủ, sáng tạo, với đầu óc phê phán tinh tường và học tập không
-										ngừng.</p>
-								</div>
+						<!-- Quarter 2 -->
+						<div class="quarter quarter-2">
+							<div class="quarter-content">
+								<p class="quarter-text">Duy trì sản xuất dù nhiều nhà máy phải sơ tán hoặc phân nhỏ,
+									công nghiệp địa phương phát triển mạnh.</p>
+								<h3>Công nghiệp</h3>
 							</div>
-							<div class="blob" style="background-color: rgb(234, 20, 20);"></div>
-						</div>
-						<!-- Card 1: Khả Năng Tư Duy -->
-						<div class="card" data-news-id="chyquan-0">
-							<div class="bg1">
-								<div class="card-content">
-									<img src="img/news/5.jpg" alt="Khả Năng Tư Duy">
-									<h3>Khả Năng Tư Duy Và Trí Tuệ</h3>
-									<p>Bác đã không ngừng quan sát, nhận xét thực tiễn, khám phá các quy luật vận động
-										xã hội.</p>
-								</div>
-							</div>
-							<div class="blob" style="background-color: rgb(255, 231, 52);"></div>
 						</div>
 
-						<!-- Card 2: Phẩm Chất Đạo Đức -->
-						<div class="card" data-news-id="chyquan-1">
-							<div class="bg1">
-								<div class="card-content">
-									<img src="img/news/6.jpg" alt="Phẩm Chất Đạo Đức">
-									<h3>Phẩm Chất Đạo Đức</h3>
-									<p>Tư duy độc lập, tự chủ, sáng tạo, với đầu óc phê phán tinh tường và học tập không
-										ngừng.</p>
-								</div>
+						<!-- Quarter 3 -->
+						<div class="quarter quarter-3">
+							<div class="quarter-content">
+								<p class="quarter-text">Bắn hạ 3.200 máy bay, bắn cháy 140 tàu chiến, bảo vệ vững chắc
+									hậu phương.</p>
+								<h3>Quốc phòng</h3>
 							</div>
-							<div class="blob" style="background-color: rgb(234, 20, 20);"></div>
+						</div>
+
+						<!-- Quarter 4 -->
+						<div class="quarter quarter-4">
+							<div class="quarter-content">
+								<p class="quarter-text">Tổng số quân giải phóng miền Nam lên 220.000 quân
+									chủ lực và 57.000 quân địa phương.</p>
+								<h3>Chi viện</h3>
+							</div>
+						</div>
+
+						<!-- Center Circle -->
+						<div class="center-circle">
+							<img src="img/news/mienbac.jpg" alt="Miền Bắc 1954-1975">
 						</div>
 					</div>
 				</div>
@@ -790,7 +916,7 @@
 	<!-- TIMELINE -->
 	<div class="grax_tm_section" id="formation">
 		<div class="container">
-			<div class="grax_tm_title_holder">
+			<div class="grax_tm_title_holder1">
 				<h3>Quá Trình <span>Hình Thành</span></h3>
 			</div>
 
@@ -1144,8 +1270,8 @@
 		</div>
 	</div>
 	<!-- /DOCUMENTS -->
-	 <!-- MINIGAME -->
-	 <div style="width:100%;display:flex;flex-direction:column;gap:8px;min-height:635px;">
+	<!-- MINIGAME -->
+	<div style="width:100%;display:flex;flex-direction:column;gap:8px;min-height:635px;">
 		<iframe src="https://quizizz.com/join?gc=404683" style="flex:1;" frameBorder="0" allowfullscreen></iframe>
 	</div>
 	<!-- /MINIGAME -->
@@ -1159,16 +1285,15 @@
 						<h3 style="font-size: 40px;">CÂU HỎI <span>CQ</span></h3>
 					</div>
 					<div class="grax_tm_title_holder2">
-						<h5 style="margin-bottom: 10px;">Trong quá trình hình thành và phát triển tư tưởng của Hồ
-							Chí Minh, thời kỳ, sự kiện và yếu tố nào là quan trọng nhất? Vì sao?</h5>
+						<h5 style="margin-bottom: 10px;">Vì sao Mỹ và chính quyền Ngô Đình Diệm phải thực hiện chính
+							sách di cư sau Hiệp định Giơnevơ (1954-1975)?</h5>
 					</div>
 				</div>
 				<div class="right wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
 					<div class="hcm_sections">
 						<div class="section_inner period" onclick="openModal('periodModal')">
 							<div class="section_header">
-								<span class="label">Thời kỳ quan trọng</span>
-								<span class="number">1911-1920</span>
+								<span class="label">Mục tiêu</span>
 							</div>
 							<div class="progress_bar">
 								<div class="progress_in" style="width: 100%"></div>
@@ -1176,8 +1301,7 @@
 						</div>
 						<div class="section_inner event" onclick="openModal('eventModal')">
 							<div class="section_header">
-								<span class="label">Sự kiện quan trọng</span>
-								<span class="number">Cách mạng Tháng Mười Nga 1917</span>
+								<span class="label">Những biện pháp thực hiện</span>
 							</div>
 							<div class="progress_bar">
 								<div class="progress_in" style="width: 100%"></div>
@@ -1185,8 +1309,7 @@
 						</div>
 						<div class="section_inner factor" onclick="openModal('factorModal')">
 							<div class="section_header">
-								<span class="label">Yếu tố quan trọng</span>
-								<span class="number">Tinh thần dân tộc</span>
+								<span class="label">Kết quả</span>
 							</div>
 							<div class="progress_bar">
 								<div class="progress_in" style="width: 100%"></div>
@@ -1201,17 +1324,18 @@
 	<div id="periodModal" class="modal1">
 		<div class="modal-content">
 			<span class="close" onclick="closeModal('periodModal')">&times;</span>
-			<h2 class="modal-title">Thời kỳ quan trọng nhất</h2>
+			<h2 class="modal-title">Mục tiêu của chính sách di cư</h2>
 			<div class="modal-text">
-				<p>Thời kỳ 1911-1920 là giai đoạn quan trọng nhất trong quá trình hình thành tư tưởng của Hồ Chí
-					Minh:</p>
-				<ul>
-					<img src="img/news/1911-1920.jpeg" alt="Hồ Chí Minh 1945" style="width: 100%; margin-bottom: 20px;">
-					<li>Đây là thời kỳ Người ra đi tìm đường cứu nước, tiếp xúc với nhiều nền văn hóa và tư tưởng
-						tiến bộ trên thế giới</li>
-					<li>Người đã từng sống và học tập tại nhiều nước như Pháp, Anh, Mỹ...</li>
-					<li>Đây là giai đoạn Người bắt đầu hình thành những tư tưởng cốt lõi về con đường giải phóng dân
-						tộc</li>
+				<p>Sau Hiệp định Giơnevơ năm 1954, Mỹ và chính quyền Ngô Đình Diệm đã thực hiện một chiến dịch di cư quy
+					mô lớn nhằm phục vụ các mục tiêu chính trị, quân sự, kinh tế và xã hội.</p>
+				<ul class="custom-list">
+					<li><strong>Về chính trị:</strong> Mỹ và chính quyền Ngô Đình Diệm muốn tạo ra một dư luận tiêu cực
+						về chế độ miền Bắc, bôi nhọ hình ảnh của Đảng Lao động Việt Nam, qua đó làm suy giảm sự ủng hộ
+						quốc tế đối với cuộc đấu tranh thống nhất đất nước.</li>
+					<li><strong>Về quân sự:</strong> Chính sách di cư giúp Mỹ và chính quyền Sài Gòn tập hợp được nguồn
+						nhân lực để tăng cường quân đội, củng cố chính quyền tay sai.</li>
+					<li><strong>Về kinh tế - xã hội:</strong> Mỹ - Diệm hy vọng việc di cư sẽ gây mất ổn định nền kinh
+						tế miền Bắc, đồng thời bổ sung nhân công giá rẻ cho các đồn điền và nhà máy tại miền Nam.</li>
 				</ul>
 			</div>
 		</div>
@@ -1220,15 +1344,16 @@
 	<div id="eventModal" class="modal1">
 		<div class="modal-content">
 			<span class="close" onclick="closeModal('eventModal')">&times;</span>
-			<h2 class="modal-title">Sự kiện quan trọng nhất</h2>
+			<h2 class="modal-title">Những biện pháp thực hiện</h2>
 			<div class="modal-text">
-				<p>Cách mạng Tháng Mười Nga 1917 là sự kiện có ảnh hưởng quyết định:</p>
-				<ul>
-					<img src="img/news/CMT10.jpg" alt="Hồ Chí Minh 1945" style="width: 100%; margin-bottom: 20px;">
-					<li>Đây là sự kiện mở ra con đường mới cho các dân tộc bị áp bức</li>
-					<li>Giúp Người nhận ra rằng chủ nghĩa Lenin là con đường đúng đắn cho việc giải phóng dân tộc
-					</li>
-					<li>Từ đây, Người đã kết hợp chủ nghĩa yêu nước với chủ nghĩa Marx-Lenin một cách sáng tạo</li>
+				<p>Mỹ - Diệm đã áp dụng nhiều biện pháp để thúc đẩy và cưỡng ép người dân miền Bắc di cư vào Nam.</p>
+				<ul class="custom-list">
+					<li><strong>Chiến dịch tuyên truyền:</strong> Chính quyền Sài Gòn tung tin đồn thất thiệt về chế độ
+						miền Bắc, lợi dụng tôn giáo để kích động tâm lý người dân.</li>
+					<li><strong>Cưỡng ép di cư:</strong> Ngụy quyền sử dụng áp lực quân sự, hành chính để ép buộc một bộ
+						phận nhân dân phải di cư.</li>
+					<li><strong>Hỗ trợ tài chính:</strong> Mỹ đã chi hàng chục triệu USD để tổ chức vận chuyển người di
+						cư bằng đường biển và đường hàng không.</li>
 				</ul>
 			</div>
 		</div>
@@ -1237,382 +1362,355 @@
 	<div id="factorModal" class="modal1">
 		<div class="modal-content">
 			<span class="close" onclick="closeModal('factorModal')">&times;</span>
-			<h2 class="modal-title">Yếu tố quan trọng nhất</h2>
+			<h2 class="modal-title">Kết quả của chính sách di cư</h2>
 			<div class="modal-text">
-				<p>Tinh thần yêu nước và truyền thống văn hóa dân tộc là yếu tố quan trọng nhất:</p>
-				<ul>
-					<img src="img/news/ttdt.jpg" alt="Hồ Chí Minh 1945" style="width: 100%; margin-bottom: 20px;">
-					<li>Đây là nền tảng tư tưởng xuyên suốt của Hồ Chí Minh</li>
-					<li>Giúp Người tiếp thu có chọn lọc các giá trị văn hóa nhân loại</li>
-					<li>Là cơ sở để Người phát triển lý luận cách mạng phù hợp với điều kiện Việt Nam</li>
+				<p>Chiến dịch di cư diễn ra trên quy mô lớn, gây ra nhiều hệ lụy về chính trị, xã hội.</p>
+				<ul class="custom-list">
+					<li>Khoảng 1 triệu người miền Bắc di cư vào Nam, trong đó có hơn 800.000 người theo Công giáo.</li>
+					<li>Chính quyền Sài Gòn thiết lập hơn 280 khu định cư mới, phần lớn dành cho người Công giáo.</li>
+					<li>Một số người di cư rơi vào cảnh khó khăn do điều kiện sống khắc nghiệt tại miền Nam.</li>
+					<li>Chính sách di cư góp phần làm trầm trọng thêm tình trạng chia cắt đất nước.</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 
-	<script>
-		function openModal(modalId) {
-			document.getElementById(modalId).style.display = "block";
-		}
+			<script>
+				function openModal(modalId) {
+					document.getElementById(modalId).style.display = "block";
+				}
 
-		function closeModal(modalId) {
-			document.getElementById(modalId).style.display = "none";
-		}
+				function closeModal(modalId) {
+					document.getElementById(modalId).style.display = "none";
+				}
 
-		window.onclick = function (event) {
-			if (event.target.className === 'modal') {
-				event.target.style.display = "none";
-			}
-		}
-
-		// Add animation class to elements with wow class
-		document.addEventListener('DOMContentLoaded', function () {
-			const wowElements = document.querySelectorAll('.wow');
-			wowElements.forEach(element => {
-				element.classList.add('fadeInLeft');
-			});
-		});
-	</script>
-	<!-- Câu hỏi CQ-->
-
-	<style>
-		.accordion_container {
-			width: 100%;
-		}
-
-		.accordion_item {
-			background: white;
-			border: 2px solid #e54b4b;
-			border-radius: 8px;
-			margin-bottom: 15px;
-			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-		}
-
-		.accordion_header {
-			padding: 20px;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			cursor: pointer;
-			background: white;
-			transition: background-color 0.3s ease;
-		}
-
-		.accordion_header:hover {
-			background: #f8f8f8;
-		}
-
-		.accordion_header h4 {
-			margin: 0;
-			font-size: 18px;
-			color: #333;
-			font-weight: 500;
-		}
-
-		.accordion_header .icon {
-			font-size: 24px;
-			transition: transform 0.3s ease;
-			color: #e54b4b;
-		}
-
-		.accordion_item.active .accordion_header .icon {
-			transform: rotate(45deg);
-		}
-
-		.accordion_content {
-			max-height: 0;
-			overflow: hidden;
-			transition: max-height 0.3s ease-out;
-		}
-
-		.accordion_item.active .accordion_content {
-			max-height: 1000px;
-		}
-
-		.content_inner {
-			padding: 0 20px 20px;
-		}
-
-		.content_inner p {
-			color: #666;
-			line-height: 1.6;
-			margin-bottom: 15px;
-		}
-
-		.content_inner ul {
-			list-style-type: disc;
-			padding-left: 20px;
-			margin-bottom: 15px;
-		}
-
-		.content_inner ul li {
-			color: #666;
-			margin-bottom: 8px;
-			line-height: 1.4;
-		}
-
-		.content_inner blockquote {
-			border-left: 4px solid #e74c3c;
-			padding-left: 15px;
-			margin: 15px 0;
-			font-style: italic;
-			color: #555;
-		}
-
-		@media (max-width: 768px) {
-			.accordion_header h4 {
-				font-size: 16px;
-			}
-
-			.content_inner {
-				padding: 0 15px 15px;
-			}
-		}
-	</style>
-
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			const accordionItems = document.querySelectorAll('.accordion_item');
-
-			accordionItems.forEach(item => {
-				const header = item.querySelector('.accordion_header');
-				const content = item.querySelector('.accordion_content');
-
-				header.addEventListener('click', () => {
-					// Close other items
-					accordionItems.forEach(otherItem => {
-						if (otherItem !== item && otherItem.classList.contains('active')) {
-							otherItem.classList.remove('active');
-							otherItem.querySelector('.accordion_content').style.maxHeight = '0px';
-						}
-					});
-
-					// Toggle current item
-					item.classList.toggle('active');
-					if (item.classList.contains('active')) {
-						content.style.maxHeight = content.scrollHeight + 'px';
-					} else {
-						content.style.maxHeight = '0px';
+				window.onclick = function (event) {
+					if (event.target.className === 'modal') {
+						event.target.style.display = "none";
 					}
-				});
-			});
-		});
-	</script>
+				}
 
-	<!-- COPYRIGHT -->
-	<div class="grax_tm_section">
-		<div class="grax_tm_copyright">
-			<div class="my_wave">
-				<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-					<defs></defs>
-					<path id="wave_img" data-color="#fff"
-						d="M 0 185.609 C 317.16666666666663 118.136 317.16666666666663 118.136 634.3333333333333 151.87 C 951.4999999999999 185.609 951.4999999999999 185.609 1268.6666666666665 116.402 C 1585.833333333333 47.195 1585.833333333333 47.195 1903 131.925 L 1903 507 L 0 507 Z"
-						fill="#fff"></path>
-				</svg>
-			</div>
-			<div class="container">
-				<div class="copyright_inner">
-					<div class="logo wow fadeInLeft" data-wow-duration="1s">
-						<img src="img/logo/logo.png" alt="" />
+				// Add animation class to elements with wow class
+				document.addEventListener('DOMContentLoaded', function () {
+					const wowElements = document.querySelectorAll('.wow');
+					wowElements.forEach(element => {
+						element.classList.add('fadeInLeft');
+					});
+				});
+			</script>
+			<!-- Câu hỏi CQ-->
+
+			<style>
+				.accordion_container {
+					width: 100%;
+				}
+
+				.accordion_item {
+					background: white;
+					border: 2px solid #e54b4b;
+					border-radius: 8px;
+					margin-bottom: 15px;
+					box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+				}
+
+				.accordion_header {
+					padding: 20px;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					cursor: pointer;
+					background: white;
+					transition: background-color 0.3s ease;
+				}
+
+				.accordion_header:hover {
+					background: #f8f8f8;
+				}
+
+				.accordion_header h4 {
+					margin: 0;
+					font-size: 18px;
+					color: #333;
+					font-weight: 500;
+				}
+
+				.accordion_header .icon {
+					font-size: 24px;
+					transition: transform 0.3s ease;
+					color: #e54b4b;
+				}
+
+				.accordion_item.active .accordion_header .icon {
+					transform: rotate(45deg);
+				}
+
+				.accordion_content {
+					max-height: 0;
+					overflow: hidden;
+					transition: max-height 0.3s ease-out;
+				}
+
+				.accordion_item.active .accordion_content {
+					max-height: 1000px;
+				}
+
+				.content_inner {
+					padding: 0 20px 20px;
+				}
+
+				.content_inner p {
+					color: #666;
+					line-height: 1.6;
+					margin-bottom: 15px;
+				}
+
+				.content_inner ul {
+					list-style-type: disc;
+					padding-left: 20px;
+					margin-bottom: 15px;
+				}
+
+				.content_inner ul li {
+					color: #666;
+					margin-bottom: 8px;
+					line-height: 1.4;
+				}
+
+				.content_inner blockquote {
+					border-left: 4px solid #e74c3c;
+					padding-left: 15px;
+					margin: 15px 0;
+					font-style: italic;
+					color: #555;
+				}
+
+				@media (max-width: 768px) {
+					.accordion_header h4 {
+						font-size: 16px;
+					}
+
+					.content_inner {
+						padding: 0 15px 15px;
+					}
+				}
+			</style>
+
+			<!-- COPYRIGHT -->
+			<div class="grax_tm_section">
+				<div class="grax_tm_copyright">
+					<div class="my_wave">
+						<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<defs></defs>
+							<path id="wave_img" data-color="#fff"
+								d="M 0 185.609 C 317.16666666666663 118.136 317.16666666666663 118.136 634.3333333333333 151.87 C 951.4999999999999 185.609 951.4999999999999 185.609 1268.6666666666665 116.402 C 1585.833333333333 47.195 1585.833333333333 47.195 1903 131.925 L 1903 507 L 0 507 Z"
+								fill="#fff"></path>
+						</svg>
 					</div>
-					<div class="social wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
-						<ul>
-							<li>
-								<a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
-							</li>
-							<li>
-								<a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
-							</li>
-							<li>
-								<a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
-							</li>
-							<li>
-								<a href="#"><img class="svg" src="img/svg/social/tik-tok.svg" alt="" /></a>
-							</li>
-							<!-- You can download another svg icons from here for free https://www.flaticon.com -->
-						</ul>
-					</div>
-					<div class="copy wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
-						<p>&copy; Copyright 2025 by Group 2</p>
+					<div class="container">
+						<div class="copyright_inner">
+							<div class="logo wow fadeInLeft" data-wow-duration="1s">
+								<img src="img/logo/logo.png" alt="" />
+							</div>
+							<div class="social wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
+								<ul>
+									<li>
+										<a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a>
+									</li>
+									<li>
+										<a href="#"><img class="svg" src="img/svg/social/tik-tok.svg" alt="" /></a>
+									</li>
+									<!-- You can download another svg icons from here for free https://www.flaticon.com -->
+								</ul>
+							</div>
+							<div class="copy wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
+								<p>&copy; Copyright 2025 by Group 2</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<!-- /COPYRIGHT -->
+			<!-- /COPYRIGHT -->
 
-	<!-- CURSOR -->
-	<div class="mouse-cursor cursor-outer"></div>
-	<div class="mouse-cursor cursor-inner"></div>
-	<!-- /CURSOR -->
+			<!-- CURSOR -->
+			<div class="mouse-cursor cursor-outer"></div>
+			<div class="mouse-cursor cursor-inner"></div>
+			<!-- /CURSOR -->
 
-	<!-- START: Page Progress -->
-	<div class="progressbar">
-		<a style="color: red;" href="#"><span class="text">Bay Lên</span></a>
-		<span class="line"></span>
-	</div>
-	<!-- END: Page Progress -->
-	<!-- CHATBOT -->
-	<div id="chatbot-container" style="display: none;">
-		<div id="chatbot-header">
-			<h4 style="color: #fff; font-weight: bold;">Hỏi đáp cùng thầy Khoa!</h4>
-			<button id="close-chatbot">&times;</button>
-		</div>
-		<div id="chatbot-messages"></div>
-		<div id="chatbot-loading" style="display: none;">
-			<div class="loading-dots">
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<p>Đừng hối, thầy Khoa đang suy nghĩ...</p>
+			<!-- START: Page Progress -->
+			<div class="progressbar">
+				<a style="color: red;" href="#"><span class="text">Bay Lên</span></a>
+				<span class="line"></span>
 			</div>
+			<!-- END: Page Progress -->
+			<!-- CHATBOT -->
+			<div id="chatbot-container" style="display: none;">
+				<div id="chatbot-header">
+					<h4 style="color: #fff; font-weight: bold;">Cô Phương chào em!</h4>
+					<button id="close-chatbot">&times;</button>
+				</div>
+				<div id="chatbot-messages"></div>
+				<div id="chatbot-loading" style="display: none;">
+					<div class="loading-dots">
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<div class="dot"></div>
+						<p>Đừng hối, để cô suy nghĩ...</p>
+					</div>
+				</div>
+				<div id="chatbot-input" style="display: flex; padding: 10px; margin-bottom: auto;">
+					<input type="text" id="user-input" placeholder="Nắm vững bài chưa người đẹp? Hỏi cô Phương đi!"
+						style="flex: 1; padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+					<button id="send-button"
+						style="margin-left: 5px; padding: 5px; background: #ffffff; color: white; border: none; border-radius: 4px; cursor: pointer;"><img
+							src="https://r2.fivemanage.com/BZMR0nG5HMWQZlsg7rbJy/mingcute--send-fill.png"
+							style="height: 30px; width: 30px; margin-bottom: 10px;" /></button>
+				</div>
+			</div>
+			<button id="open-chatbot"
+				style="position: fixed; bottom: 20px; right: 20px; padding: 10px; background: #e54b4b; color: white; border: none; border-radius: 80%; cursor: pointer;"><img
+					src="https://r2.fivemanage.com/BZMR0nG5HMWQZlsg7rbJy/hugeicons--ai-chat-02.png"
+					style="height: 50px; width: 50px" /></button>
 		</div>
-		<div id="chatbot-input" style="display: flex; padding: 10px; margin-bottom: auto;">
-			<input type="text" id="user-input" placeholder="Thầy Khoa nè ku, hỏi gì đi!"
-				style="flex: 1; padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
-			<button id="send-button"
-				style="margin-left: 5px; padding: 5px; background: #ffffff; color: white; border: none; border-radius: 4px; cursor: pointer;"><img
-					src="https://r2.fivemanage.com/BZMR0nG5HMWQZlsg7rbJy/mingcute--send-fill.png"
-					style="height: 30px; width: 30px; margin-bottom: 10px;" /></button>
-		</div>
-	</div>
-	<button id="open-chatbot"
-		style="position: fixed; bottom: 20px; right: 20px; padding: 10px; background: #e54b4b; color: white; border: none; border-radius: 80%; cursor: pointer;"><img
-			src="https://r2.fivemanage.com/BZMR0nG5HMWQZlsg7rbJy/hugeicons--ai-chat-02.png"
-			style="height: 50px; width: 50px" /></button>
-	</div>
-	<!-- / WRAPPER ALL -->
+		<!-- / WRAPPER ALL -->
 
-	<!-- SCRIPTS -->
-	<script src="js/jquery.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/init.js"></script>
-	<!-- /SCRIPTS -->
-	<script type="module">
-		import { GoogleGenerativeAI } from '@google/generative-ai';
+		<!-- SCRIPTS -->
+		<script src="js/jquery.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/flipcard.js"></script>
+		<!-- /SCRIPTS -->
+		 
+		<script type="module">
+			import { GoogleGenerativeAI } from '@google/generative-ai';
 
-		const apiKey = 'AIzaSyCpLTayB36F3TEMCbqdsWWnar81yksRPa8';
-		const genAI = new GoogleGenerativeAI(apiKey);
-		const generationConfig = {
-			temperature: 1,
-			topP: 0.95,
-			topK: 40,
-			maxOutputTokens: 8192,
-		};
+			const apiKey = 'AIzaSyCpLTayB36F3TEMCbqdsWWnar81yksRPa8';
+			const genAI = new GoogleGenerativeAI(apiKey);
+			const generationConfig = {
+				temperature: 1,
+				topP: 0.95,
+				topK: 40,
+				maxOutputTokens: 8192,
+			};
 
-		let chat; // Store the chat session
+			let chat; // Store the chat session
 
-		// Initialize the chat model and start a chat session
-		async function initializeChat() {
-			try {
-				const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp", generationConfig });
-				// Create the chat history with proper format
-				const history = [
-					{
-						role: "user",
-						parts: [{
-							text: "Bạn là một sinh viên đại học chuyên ngành khoa học chính trị, với kiến thức chuyên môn cao về bộ môn tư tưởng Hồ Chí Minh. Nhiệm vụ của bạn là giải thích, phân tích và ứng dụng tư tưởng Hồ Chí Minh trong các bối cảnh thực tiễn hiện đại, sử dụng ngôn ngữ súc tích, rõ ràng, và có tính học thuật."
-						}]
-					}
-				];
+			// Initialize the chat model and start a chat session
+			async function initializeChat() {
+				try {
+					const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp", generationConfig });
+					// Create the chat history with proper format
+					const history = [
+						{
+							role: "user",
+							parts: [{
+								text: "Mô Tả Vai Trò\nBạn là một chuyên gia hàng đầu về lịch sử Việt Nam hiện đại, đặc biệt chuyên sâu về giai đoạn 1954-1975. Nhiệm vụ của bạn là phân tích và trả lời câu hỏi lịch sử dựa trên sự kiện, tài liệu chính thống và các nguồn học thuật uy tín. Bạn cần đảm bảo rằng phân tích của mình đặt trong bối cảnh lịch sử đúng đắn và toàn diện của thời kỳ này. Sử dụng giọng điệu và tông giọng tuổi teen phù hợp với các bạn trẻ và sinh viên trong vai trò là giảng viên\nBối Cảnh Lịch Sử Chi Tiết\nHiệp Định Geneva 1954\n\nKý kết ngày 21/7/1954 sau chiến thắng Điện Biên Phủ\nCông nhận độc lập, chủ quyền và toàn vẹn lãnh thổ của Việt Nam\nQuy định tạm thời chia cắt Việt Nam tại vỹ tuyến 17\nQuy định tổ chức tổng tuyển cử thống nhất đất nước vào năm 1956\nCấm đưa quân đội, nhân viên quân sự, vũ khí mới vào Việt Nam\n\nTình Hình Miền Bắc\n\nDưới sự lãnh đạo của Đảng Lao động Việt Nam (nay là Đảng Cộng sản Việt Nam)\nTiến hành cải cách ruộng đất và khôi phục kinh tế\nBắt đầu quá trình xây dựng chủ nghĩa xã hội\nNhận được sự hỗ trợ từ Liên Xô và Trung Quốc\n\nTình Hình Miền Nam\n\nChính quyền Ngô Đình Diệm được Mỹ hậu thuẫn\nTừ chối tổ chức tổng tuyển cử theo Hiệp định Geneva\nTiến hành các chính sách đàn áp cựu kháng chiến và những người yêu nước\nMỹ thực hiện chiến lược \"Người Mỹ và đồng minh của người Mỹ\"\n\nCâu Hỏi Cần Phân Tích\nVì sao Mỹ và chính quyền Ngô Đình Diệm phải thực hiện chính sách di cư sau Hiệp định Geneva (1954-1975)?\nHướng Dẫn Phân Tích Chi Tiết\n1. Mở Đầu (200-250 từ)\n\nGiới thiệu tổng quan về Hiệp định Geneva 1954 và tác động của nó đến tình hình Việt Nam\nNêu rõ về việc chia cắt tạm thời đất nước và quy định về tự do di cư trong hiệp định\nĐịnh nghĩa ngắn gọn về \"chính sách di cư\" được thực hiện bởi Mỹ và chính quyền Ngô Đình Diệm\nNêu luận điểm chính về các động cơ chiến lược của chính sách này\n\n2. Phân Tích Các Lý Do Chính Trị và Ý Thức Hệ (350-400 từ)\n\nChiến lược chống cộng: Phân tích vai trò của chính sách di cư trong chiến lược ngăn chặn chủ nghĩa cộng sản của Mỹ\nThuyết Domino: Làm rõ mối liên hệ giữa thuyết Domino và các chính sách của Mỹ tại Việt Nam\nXây dựng cơ sở chính trị: Phân tích việc sử dụng người di cư làm cơ sở xã hội ủng hộ chính quyền Ngô Đình Diệm\nTạo chính nghĩa: Việc tạo ra \"làn sóng người tị nạn trốn chạy cộng sản\" nhằm tuyên truyền chống cộng quốc tế\nVai trò của yếu tố tôn giáo: Phân tích việc sử dụng cộng đồng Công giáo trong chính sách di cư\n\n3. Phân Tích Các Lý Do Quân Sự và An Ninh (300-350 từ)\n\nKiểm soát dân số: Chiến lược tái định cư nhằm tách dân khỏi ảnh hưởng của lực lượng cách mạng\nTạo vùng đệm: Việc di dời người dân để tạo các khu vực an toàn và vùng đệm chiến lược\nNguồn nhân lực quân sự: Việc sử dụng người di cư làm nguồn bổ sung cho quân đội Việt Nam Cộng Hòa\nCác chương trình \"Ấp Chiến Lược\": Mối liên hệ giữa chính sách di cư và các chương trình kiểm soát nông thôn\n\n4. Phân Tích Các Lý Do Kinh Tế và Xã Hội (300-350 từ)\n\nTạo lực lượng lao động: Vai trò của người di cư trong các dự án phát triển do Mỹ tài trợ\nXây dựng tầng lớp trung lưu: Chiến lược tạo ra một tầng lớp xã hội phụ thuộc vào sự hỗ trợ của Mỹ\nCải cách xã hội: Các chương trình cải cách xã hội gắn liền với chính sách di cư\nTâm lý chiến: Việc sử dụng người di cư trong chiến dịch tuyên truyền và chiến tranh tâm lý\n\n5. Phân Tích Cách Thức Thực Hiện (300-350 từ)\n\nChiến dịch \"Bắc tiến\": Mô tả chi tiết hoạt động của Ủy ban di cư Công giáo và vai trò của Hải quân Mỹ\nHoạt động tuyên truyền: Phân tích các hình thức tuyên truyền được sử dụng để khuyến khích di cư\nCác chương trình hỗ trợ: Mô tả các chương trình hỗ trợ di dân và tái định cư\nCác biện pháp cưỡng bức: Phân tích các biện pháp cưỡng bức được áp dụng trong một số trường hợp\n\n6. Tác Động và Hệ Quả (300-350 từ)\n\nTác động nhân khẩu học: Phân tích sự thay đổi cơ cấu dân số ở miền Nam Việt Nam\nTác động chính trị-xã hội: Mô tả những thay đổi trong cấu trúc xã hội và chính trị ở miền Nam\nTác động đến cuộc kháng chiến: Phân tích những khó khăn và thách thức đối với phong trào cách mạng\nHệ quả lâu dài: Đánh giá tác động lâu dài của chính sách di cư đến tiến trình lịch sử Việt Nam\n\n7. Đánh Giá Trong Bối Cảnh Lịch Sử (250-300 từ)\n\nĐặt trong bối cảnh Chiến tranh Lạnh: Phân tích chính sách di cư như một phần của cuộc đối đầu Đông-Tây\nSo sánh với các chính sách tương tự: So sánh với các chính sách di cư trong các cuộc chiến tranh khác\nĐánh giá hiệu quả: Đánh giá mức độ thành công và thất bại của chính sách này\nLiên hệ với nội dung chương 2.2.2 và 2.2.3: Kết nối vấn đề với nội dung của phần 2.2.2 và 2.2.3 trong giáo trình\n\n8. Kết Luận (200-250 từ)\n\nTóm tắt các lý do chính của việc thực hiện chính sách di cư\nĐánh giá tổng thể về tác động của chính sách này đối với cuộc kháng chiến và tiến trình lịch sử Việt Nam\nNêu bài học lịch sử từ chính sách này\nKết luận về ý nghĩa lịch sử của việc thất bại của chính sách này trong bối cảnh thắng lợi của cách mạng Việt Nam\n\nYêu Cầu Về Phương Pháp và Tài Liệu\n\nSử dụng phương pháp phân tích lịch sử biện chứng, đặt các sự kiện trong mối quan hệ nhân-quả\nTrích dẫn dữ liệu cụ thể: số liệu về người di cư, thời gian, địa điểm của các đợt di cư\nTrích dẫn các tài liệu chính thức của chính phủ Mỹ, chính quyền Sài Gòn và các tài liệu lịch sử Việt Nam\nSử dụng các nguồn tư liệu đa dạng: văn kiện, hồi ký, nghiên cứu học thuật\nĐảm bảo tính khách quan học thuật, trình bày đa chiều về vấn đề\n\nHướng Dẫn Trình Bày\n\nSử dụng cấu trúc đoạn văn rõ ràng, mỗi đoạn tập trung vào một ý chính\nSử dụng các tiểu mục để phân chia các phần phân tích\nSử dụng các dẫn chứng cụ thể, số liệu và trích dẫn để hỗ trợ các lập luận\nSử dụng ngôn ngữ học thuật, chính xác và khách quan\nTổng độ dài bài viết khoảng 2000-2500 từ\n\nCác Sự Kiện và Số Liệu Quan Trọng Cần Đề Cập\n\nHiệp định Geneva quy định thời gian 300 ngày cho việc tự do di cư giữa hai miền\nChiến dịch di cư từ Bắc vào Nam diễn ra chủ yếu từ tháng 8/1954 đến tháng 5/1955\nKhoảng 800.000 đến 1 triệu người đã di cư từ miền Bắc vào miền Nam trong giai đoạn này\nKhoảng 60% số người di cư là người Công giáo\nChương trình \"Passage to Freedom\" (Con đường đến Tự do) của Hải quân Mỹ đã vận chuyển khoảng 310.000 người\nVai trò của Đại tá Edward Lansdale trong việc tổ chức chiến dịch tâm lý cho hoạt động di cư\nKinh phí hỗ trợ di cư của Mỹ lên đến khoảng 93 triệu USD\nCác khu tái định cư chính: Cai Lậy (Mỹ Tho), Cái Sắn (Rạch Giá), Gia Kiệm (Biên Hòa)\nCác chương trình \"Ấp Chiến Lược\" và \"Ấp Tân Sinh\" gắn liền với chính sách di cư và tái định cư"
+							}]
+						}
+					];
 
-				// Start a chat session with history
-				chat = model.startChat({
-					history: history,
-					generationConfig,
+					// Start a chat session with history
+					chat = model.startChat({
+						history: history,
+						generationConfig,
+					});
+
+					console.log('Chat initialized successfully');
+					// After initialization, add keyword listeners
+					addKeywordListeners();
+				} catch (error) {
+					console.error('Error initializing Gemini:', error);
+				}
+			}
+
+			// Modified sendMessage function to use proper message format
+			async function sendMessage(messageText) {
+				if (!chat) {
+					appendMessage('Bot: Chat is not initialized yet. Please try again.');
+					return;
+				}
+
+				// If messageText is not provided, get it from the input field
+				if (!messageText) {
+					const userInput = document.getElementById('user-input');
+					messageText = userInput.value.trim();
+					if (messageText === '') return;
+					userInput.value = '';
+				}
+
+				// Always append the message to the chat
+				appendMessage('You: ' + messageText);
+
+				// Show loading icon
+				const loadingContainer = document.getElementById('chatbot-loading');
+				loadingContainer.style.display = 'block';
+
+				try {
+					const result = await chat.sendMessage(messageText);
+					const response = await result.response;
+
+					// Hide loading icon
+					loadingContainer.style.display = 'none';
+
+					appendMessage('Bot: ' + response.text());
+				} catch (error) {
+					console.error('Error calling Gemini API:', error);
+
+					// Hide loading icon
+					loadingContainer.style.display = 'none';
+
+					appendMessage('Bot: Sorry, I encountered an error. Please try again.');
+				}
+			}
+
+			// Modified addKeywordListeners function
+			function addKeywordListeners() {
+				const highlights = document.querySelectorAll('.highlight-text');
+				highlights.forEach(keyword => {
+					keyword.removeEventListener('click', handleKeywordClick);
+					keyword.addEventListener('click', handleKeywordClick);
 				});
-
-				console.log('Chat initialized successfully');
-				// After initialization, add keyword listeners
-				addKeywordListeners();
-			} catch (error) {
-				console.error('Error initializing Gemini:', error);
-			}
-		}
-
-		// Modified sendMessage function to use proper message format
-		async function sendMessage(messageText) {
-			if (!chat) {
-				appendMessage('Bot: Chat is not initialized yet. Please try again.');
-				return;
 			}
 
-			// If messageText is not provided, get it from the input field
-			if (!messageText) {
-				const userInput = document.getElementById('user-input');
-				messageText = userInput.value.trim();
-				if (messageText === '') return;
-				userInput.value = '';
+			// Separate function to handle keyword clicks
+			function handleKeywordClick(event) {
+				const keywordText = event.target.getAttribute('data-keyword') || event.target.textContent;
+				if (keywordText) {
+					// Show the chatbot if it's hidden
+					openChatbot();
+
+					// Send the keyword text to the chatbot
+					sendMessage(keywordText);
+				}
 			}
 
-			// Always append the message to the chat
-			appendMessage('You: ' + messageText);
+			function appendMessage(message) {
+				const messagesContainer = document.getElementById('chatbot-messages');
+				const messageElement = document.createElement('div');
 
-			// Show loading icon
-			const loadingContainer = document.getElementById('chatbot-loading');
-			loadingContainer.style.display = 'block';
+				// Determine if the message is from the user or the bot
+				if (message.startsWith('You:')) {
+					messageElement.classList.add('message', 'user-message'); // User message styles
+					messageElement.textContent = message.replace('You: ', ''); // Remove "You: " prefix
+				} else {
+					messageElement.classList.add('message', 'bot-message'); // Bot message styles
+					const formattedMessage = formatBotMessage(message.replace('Bot: ', '')); // Format the bot message
+					messageElement.innerHTML = formattedMessage; // Use innerHTML to insert formatted content
+				}
 
-			try {
-				const result = await chat.sendMessage(messageText);
-				const response = await result.response;
-
-				// Hide loading icon
-				loadingContainer.style.display = 'none';
-
-				appendMessage('Bot: ' + response.text());
-			} catch (error) {
-				console.error('Error calling Gemini API:', error);
-
-				// Hide loading icon
-				loadingContainer.style.display = 'none';
-
-				appendMessage('Bot: Sorry, I encountered an error. Please try again.');
-			}
-		}
-
-		// Modified addKeywordListeners function
-		function addKeywordListeners() {
-			const highlights = document.querySelectorAll('.highlight-text');
-			highlights.forEach(keyword => {
-				keyword.removeEventListener('click', handleKeywordClick);
-				keyword.addEventListener('click', handleKeywordClick);
-			});
-		}
-
-		// Separate function to handle keyword clicks
-		function handleKeywordClick(event) {
-			const keywordText = event.target.getAttribute('data-keyword') || event.target.textContent;
-			if (keywordText) {
-				// Show the chatbot if it's hidden
-				openChatbot();
-
-				// Send the keyword text to the chatbot
-				sendMessage(keywordText);
-			}
-		}
-
-		function appendMessage(message) {
-			const messagesContainer = document.getElementById('chatbot-messages');
-			const messageElement = document.createElement('div');
-
-			// Determine if the message is from the user or the bot
-			if (message.startsWith('You:')) {
-				messageElement.classList.add('message', 'user-message'); // User message styles
-				messageElement.textContent = message.replace('You: ', ''); // Remove "You: " prefix
-			} else {
-				messageElement.classList.add('message', 'bot-message'); // Bot message styles
-				const formattedMessage = formatBotMessage(message.replace('Bot: ', '')); // Format the bot message
-				messageElement.innerHTML = formattedMessage; // Use innerHTML to insert formatted content
+				messagesContainer.appendChild(messageElement);
+				messagesContainer.scrollTop = messagesContainer.scrollHeight;
 			}
 
-			messagesContainer.appendChild(messageElement);
-			messagesContainer.scrollTop = messagesContainer.scrollHeight;
-		}
-
-		// Function to format the bot message
-		function formatBotMessage(message) {
-			// Add CSS styles for the formatted message
-			const styles = `
+			// Function to format the bot message
+			function formatBotMessage(message) {
+				// Add CSS styles for the formatted message
+				const styles = `
 		<style>
 			.bot-message {
 				font-family: Arial, sans-serif;
@@ -1653,167 +1751,167 @@
 			}
 		</style>`;
 
-			// Helper function to create bullet points for content before and after the colon
-			function processContent(content) {
-				// Remove * characters and process bold formatting denoted by **
-				const sanitizedContent = content.replace(/\*/g, '').replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-				const items = sanitizedContent.split(/:/).map(item => item.trim());
-				let result = '';
+				// Helper function to create bullet points for content before and after the colon
+				function processContent(content) {
+					// Remove * characters and process bold formatting denoted by **
+					const sanitizedContent = content.replace(/\*/g, '').replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+					const items = sanitizedContent.split(/:/).map(item => item.trim());
+					let result = '';
 
-				if (items.length === 2) {
-					// Create bullet points for both sides of the colon
-					result += `<ul class="bot-list">`;
-					result += `<li><strong>${items[0]}</strong></li>`;
-					result += `<li><div class="bot-list-indent">${items[1]}</div></li>`;
-					result += `</ul>`;
-				} else {
-					// Fallback for content without a colon
-					result += `<ul class="bot-list">`;
-					result += `<li>${items[0]}</li>`;
-					result += `</ul>`;
+					if (items.length === 2) {
+						// Create bullet points for both sides of the colon
+						result += `<ul class="bot-list">`;
+						result += `<li><strong>${items[0]}</strong></li>`;
+						result += `<li><div class="bot-list-indent">${items[1]}</div></li>`;
+						result += `</ul>`;
+					} else {
+						// Fallback for content without a colon
+						result += `<ul class="bot-list">`;
+						result += `<li>${items[0]}</li>`;
+						result += `</ul>`;
+					}
+
+					return result;
 				}
 
-				return result;
+				let formattedMessage = '';
+
+				try {
+					// Split message into sections based on numbered titles
+					const sections = message.split(/(?=\d+\.\s)/);
+
+					sections.forEach(section => {
+						if (section.trim()) {
+							// Match the heading and content
+							const headingMatch = section.match(/^(\d+\.\s[^\n]+)\n(.*)$/s);
+
+							if (headingMatch) {
+								const [_, heading, content] = headingMatch;
+
+								// Add formatted heading
+								formattedMessage += `<h3>${heading.trim().replace(/\*/g, '')}</h3>`;
+
+								// Process each line of content
+								const lines = content.trim().split(/\n/);
+								lines.forEach(line => {
+									formattedMessage += processContent(line);
+								});
+							}
+						}
+					});
+
+					return `<div class="bot-message">${styles}${formattedMessage}</div>`;
+				} catch (error) {
+					console.error('Error formatting message:', error);
+					return `<div class="bot-message">${message}</div>`;
+				}
 			}
 
-			let formattedMessage = '';
+			function openChatbot() {
+				const chatbotContainer = document.getElementById('chatbot-container');
+				chatbotContainer.style.display = 'block';
+				setTimeout(() => {
+					chatbotContainer.classList.add('show');
+				}, 10); // Small delay to trigger the transition
+			}
 
-			try {
-				// Split message into sections based on numbered titles
-				const sections = message.split(/(?=\d+\.\s)/);
+			function closeChatbot() {
+				const chatbotContainer = document.getElementById('chatbot-container');
+				chatbotContainer.classList.remove('show');
+				setTimeout(() => {
+					chatbotContainer.style.display = 'none';
+				}, 300); // Match the transition duration
+			}
 
-				sections.forEach(section => {
-					if (section.trim()) {
-						// Match the heading and content
-						const headingMatch = section.match(/^(\d+\.\s[^\n]+)\n(.*)$/s);
+			// Event Listeners
+			document.getElementById('send-button').addEventListener('click', () => sendMessage());
 
-						if (headingMatch) {
-							const [_, heading, content] = headingMatch;
+			document.getElementById('user-input').addEventListener('keypress', function (e) {
+				if (e.key === 'Enter') {
+					e.preventDefault();
+					sendMessage();
+				}
+			});
 
-							// Add formatted heading
-							formattedMessage += `<h3>${heading.trim().replace(/\*/g, '')}</h3>`;
+			document.getElementById('open-chatbot').addEventListener('click', function () {
+				toggleChatbot();
+			});
 
-							// Process each line of content
-							const lines = content.trim().split(/\n/);
-							lines.forEach(line => {
-								formattedMessage += processContent(line);
-							});
+			document.getElementById('close-chatbot').addEventListener('click', function () {
+				closeChatbot();
+			});
+
+			function toggleChatbot() {
+				const chatbotContainer = document.getElementById('chatbot-container');
+				if (chatbotContainer.classList.contains('show')) {
+					closeChatbot();
+				} else {
+					openChatbot();
+				}
+			}
+
+			// Initialize the chat when the page loads
+			window.addEventListener('load', initializeChat);
+
+			// Add keyword listeners when modal content is loaded
+			document.addEventListener('DOMContentLoaded', function () {
+				const observer = new MutationObserver(addKeywordListeners);
+				observer.observe(document.body, { childList: true, subtree: true });
+			});
+
+			$(document).ready(function () {
+				$('.popup-youtube').magnificPopup({
+					type: 'iframe',
+					iframe: {
+						patterns: {
+							youtube: {
+								index: 'youtube.com/', // Điều chỉnh cho YouTube
+								id: 'v=', // Lấy ID video từ URL
+								src: 'https://www.youtube.com/embed/%id%?autoplay=1' // URL phát
+							}
 						}
-					}
+					},
+					mainClass: 'mfp-fade',
+					removalDelay: 300,
+					preloader: false,
+					fixedContentPos: false
+				});
+			});
+
+		</script>
+		<script>
+			// If needed, add hover pause effect for the NEWS carousel
+			document.querySelectorAll('.news-wrapper').forEach(wrapper => {
+				wrapper.addEventListener('mouseenter', function () {
+					this.querySelector('.news-inner').style.animationPlayState = 'paused';
 				});
 
-				return `<div class="bot-message">${styles}${formattedMessage}</div>`;
-			} catch (error) {
-				console.error('Error formatting message:', error);
-				return `<div class="bot-message">${message}</div>`;
-			}
-		}
-
-		function openChatbot() {
-			const chatbotContainer = document.getElementById('chatbot-container');
-			chatbotContainer.style.display = 'block';
-			setTimeout(() => {
-				chatbotContainer.classList.add('show');
-			}, 10); // Small delay to trigger the transition
-		}
-
-		function closeChatbot() {
-			const chatbotContainer = document.getElementById('chatbot-container');
-			chatbotContainer.classList.remove('show');
-			setTimeout(() => {
-				chatbotContainer.style.display = 'none';
-			}, 300); // Match the transition duration
-		}
-
-		// Event Listeners
-		document.getElementById('send-button').addEventListener('click', () => sendMessage());
-
-		document.getElementById('user-input').addEventListener('keypress', function (e) {
-			if (e.key === 'Enter') {
-				e.preventDefault();
-				sendMessage();
-			}
-		});
-
-		document.getElementById('open-chatbot').addEventListener('click', function () {
-			toggleChatbot();
-		});
-
-		document.getElementById('close-chatbot').addEventListener('click', function () {
-			closeChatbot();
-		});
-
-		function toggleChatbot() {
-			const chatbotContainer = document.getElementById('chatbot-container');
-			if (chatbotContainer.classList.contains('show')) {
-				closeChatbot();
-			} else {
-				openChatbot();
-			}
-		}
-
-		// Initialize the chat when the page loads
-		window.addEventListener('load', initializeChat);
-
-		// Add keyword listeners when modal content is loaded
-		document.addEventListener('DOMContentLoaded', function () {
-			const observer = new MutationObserver(addKeywordListeners);
-			observer.observe(document.body, { childList: true, subtree: true });
-		});
-
-		$(document).ready(function () {
-			$('.popup-youtube').magnificPopup({
-				type: 'iframe',
-				iframe: {
-					patterns: {
-						youtube: {
-							index: 'youtube.com/', // Điều chỉnh cho YouTube
-							id: 'v=', // Lấy ID video từ URL
-							src: 'https://www.youtube.com/embed/%id%?autoplay=1' // URL phát
-						}
-					}
-				},
-				mainClass: 'mfp-fade',
-				removalDelay: 300,
-				preloader: false,
-				fixedContentPos: false
-			});
-		});
-
-	</script>
-	<script>
-		// If needed, add hover pause effect for the NEWS carousel
-		document.querySelectorAll('.news-wrapper').forEach(wrapper => {
-			wrapper.addEventListener('mouseenter', function () {
-				this.querySelector('.news-inner').style.animationPlayState = 'paused';
+				wrapper.addEventListener('mouseleave', function () {
+					this.querySelector('.news-inner').style.animationPlayState = 'running';
+				});
 			});
 
-			wrapper.addEventListener('mouseleave', function () {
-				this.querySelector('.news-inner').style.animationPlayState = 'running';
+			// Add click handler to view full card content
+			document.querySelectorAll('.news-card').forEach(card => {
+				card.addEventListener('click', function () {
+					// Find the index of this card
+					const index = this.style.getPropertyValue('--index');
+
+					// You could open a modal here to show full content
+					// For now, just log to console
+					console.log(`Card ${index} clicked!`);
+
+					// If you have the original modal functionality, you could trigger it here
+				});
 			});
-		});
-
-		// Add click handler to view full card content
-		document.querySelectorAll('.news-card').forEach(card => {
-			card.addEventListener('click', function () {
-				// Find the index of this card
-				const index = this.style.getPropertyValue('--index');
-
-				// You could open a modal here to show full content
-				// For now, just log to console
-				console.log(`Card ${index} clicked!`);
-
-				// If you have the original modal functionality, you could trigger it here
-			});
-		});
-	</script>
-	<script>
-		// Define the content for each news card outside any function
-		const newsContent = {
-			// Cơ Sở Khách Quan
-			"khachquan-0": {
-				title: "Bối Cảnh Lịch Sử Hình Thành Tư Tưởng Hồ Chí Minh",
-				content: `
+		</script>
+		<script>
+			// Define the content for each news card outside any function
+			const newsContent = {
+				// Cơ Sở Khách Quan
+				"khachquan-0": {
+					title: "Bối Cảnh Lịch Sử Hình Thành Tư Tưởng Hồ Chí Minh",
+					content: `
 					<img src="img/news/1.jpg" alt="Bối Cảnh Lịch Sử">
 					<p>Bác sinh ngày 19/05/1890, trong lúc đất nước gặp nhiều biến động. Triều đình Nguyễn dần đầu hàng Pháp và thừa nhận nền bảo hộ của chúng trên toàn đất nước.</p>
 					
@@ -1827,11 +1925,11 @@
 					
 					<blockquote>Phong trào cứu nước của nhân dân ta muốn giành được thắng lợi phải đi theo một con đường mới.</blockquote>
 				`,
-				color: "229, 75, 75"
-			},
-			"khachquan-1": {
-				title: "Bối Cảnh Thời Đại Hình Thành Tư Tưởng Hồ Chí Minh",
-				content: `
+					color: "229, 75, 75"
+				},
+				"khachquan-1": {
+					title: "Bối Cảnh Thời Đại Hình Thành Tư Tưởng Hồ Chí Minh",
+					content: `
 					<img src="img/news/2.jpg" alt="Bối Cảnh Thời Đại">
 					<p>Ở Việt Nam, việc cứu nước chìm trong bóng tối: "không có đường ra". Ngoài thế giới, chủ nghĩa tư bản chuyển sang giai đoạn độc quyền và xác lập quyền thống trị trên toàn thế giới. Chủ nghĩa đế quốc nổi lên và trở thành kẻ thù chung của các dân tộc thuộc địa.</p>
 					
@@ -1839,11 +1937,11 @@
 					
 					<blockquote>Với thắng lợi này, Liên bang Cộng hòa xã hội chủ nghĩa Xô Viết ra đời (1922) và tiếp đó là sự ra đời của Quốc tế Cộng sản (3-1919) ⇒ Phong trào công nhân trong các nước tư sản chủ nghĩa phương Tây và phong trào giải phóng dân tộc ở các nước thuộc địa phương Đông càng có quan hệ mật thiết với nhau hơn trong việc chống kẻ thù chung là chủ nghĩa đế quốc.</blockquote>
 				`,
-				color: "75, 138, 229"
-			},
-			"khachquan-2": {
-				title: "Những Tiền Đề, Tư Tưởng - Lý Luận",
-				content: `
+					color: "75, 138, 229"
+				},
+				"khachquan-2": {
+					title: "Những Tiền Đề, Tư Tưởng - Lý Luận",
+					content: `
 					<img src="img/news/3.jpg" alt="Những Tiền Đề">
 					<h3>Giá trị truyền thống tốt đẹp của của dân tộc Việt Nam</h3>
 					
@@ -1863,13 +1961,13 @@
 					
 					<p>⇒ Qua đó Bác hiểu được rằng chỉ có CNXH, CNCS mới giải phóng được các dân tộc bị áp bức.</p>
 				`,
-				color: "142, 212, 99"
-			},
+					color: "142, 212, 99"
+				},
 
-			// Nhân Tố Chủ Quan
-			"chyquan-0": {
-				title: "Khả Năng Tư Duy Và Trí Tuệ Của Chủ Tịch Hồ Chí Minh",
-				content: `
+				// Nhân Tố Chủ Quan
+				"chyquan-0": {
+					title: "Khả Năng Tư Duy Và Trí Tuệ Của Chủ Tịch Hồ Chí Minh",
+					content: `
 					<img src="img/news/5.jpg" alt="Khả Năng Tư Duy">
 					<blockquote>Bác đã không ngừng quan sát, nhận xét thực tiễn, làm phồng thêm sự hiểu biết để tạo nên những thành công trong các hoạt động của Người.</blockquote>
 					
@@ -1877,11 +1975,11 @@
 					
 					<p>⇒ Lý luận của Bác mang giá trị khách quan, cách mạng và khoa học.</p>
 				`,
-				color: "252, 154, 91"
-			},
-			"chyquan-1": {
-				title: "Phẩm Chất Đạo Đức Và Năng Lực Hoạt Động Thực Tiễn",
-				content: `
+					color: "252, 154, 91"
+				},
+				"chyquan-1": {
+					title: "Phẩm Chất Đạo Đức Và Năng Lực Hoạt Động Thực Tiễn",
+					content: `
 					<img src="img/news/6.jpg" alt="Phẩm Chất Đạo Đức">
 					<blockquote>Phẩm chất, tài năng được thể hiện hết ở tư duy độc lập, tự chủ, sáng tạo, cộng với đầu óc phê phán tinh tường, sáng suốt trong việc nhận xét, đánh giá các sự vật, sự vật chung quanh. Và chúng cũng được Bác biểu hiện ở bản lĩnh kiên định, luôn tin vào nhân dân, khiêm tốn, bình dị, ham học hỏi, nhạy bén với cái mới, có phương pháp biện chứng, có đầu óc thực tiễn.</blockquote>
 					
@@ -1889,193 +1987,193 @@
 					
 					<p>⇒ Tư tưởng Hồ Chí Minh đã trở thành tư tưởng Việt Nam hiện đại.</p>
 				`,
-				color: "186, 100, 228"
-			}
-		};
+					color: "186, 100, 228"
+				}
+			};
 
-		// Define these functions globally
-		function openNewsModal(event) {
-			// Get the news ID from the card
-			const card = event.currentTarget;
-			const section = card.closest('.news-wrapper').dataset.section;
-			const index = card.style.getPropertyValue('--index').trim();
-			const newsId = `${section}-${index}`;
+			// Define these functions globally
+			function openNewsModal(event) {
+				// Get the news ID from the card
+				const card = event.currentTarget;
+				const section = card.closest('.news-wrapper').dataset.section;
+				const index = card.style.getPropertyValue('--index').trim();
+				const newsId = `${section}-${index}`;
 
-			console.log("Opening modal for:", newsId);
+				console.log("Opening modal for:", newsId);
 
-			const newsItem = newsContent[newsId];
+				const newsItem = newsContent[newsId];
 
-			if (!newsItem) {
-				console.error("No content found for:", newsId);
-				return;
-			}
+				if (!newsItem) {
+					console.error("No content found for:", newsId);
+					return;
+				}
 
-			// Set modal content
-			document.getElementById('newsModalTitle').textContent = newsItem.title;
-			document.getElementById('newsModalBody').innerHTML = newsItem.content;
+				// Set modal content
+				document.getElementById('newsModalTitle').textContent = newsItem.title;
+				document.getElementById('newsModalBody').innerHTML = newsItem.content;
 
-			// Set modal color theme
-			document.documentElement.style.setProperty('--modal-color', newsItem.color);
+				// Set modal color theme
+				document.documentElement.style.setProperty('--modal-color', newsItem.color);
 
-			// Show the modal
-			const modal = document.getElementById('newsModal');
-			modal.style.display = 'block';
+				// Show the modal
+				const modal = document.getElementById('newsModal');
+				modal.style.display = 'block';
 
-			// Add active class for animation
-			setTimeout(() => {
-				modal.classList.add('active');
-			}, 10);
-
-			// Prevent background scrolling
-			document.body.style.overflow = 'hidden';
-
-			// Pause carousel animation
-			const inner = card.closest('.news-inner');
-			if (inner) inner.style.animationPlayState = 'paused';
-		}
-
-		function closeNewsModal() {
-			const modal = document.getElementById('newsModal');
-			modal.classList.remove('active');
-
-			// Wait for animation to finish before hiding
-			setTimeout(() => {
-				modal.style.display = 'none';
-				document.body.style.overflow = 'auto';
-
-				// Resume all carousel animations
-				document.querySelectorAll('.news-inner').forEach(inner => {
-					inner.style.animationPlayState = 'running';
-				});
-			}, 300);
-		}
-
-		// Set up all event handlers when DOM is loaded
-		document.addEventListener('DOMContentLoaded', function () {
-			// Set up data attributes for first news list
-			const firstNewsWrapper = document.querySelector('.news-wrapper:nth-of-type(1)');
-			if (firstNewsWrapper) firstNewsWrapper.dataset.section = 'khachquan';
-
-			// Set up data attributes for second news list
-			const secondNewsWrapper = document.querySelector('.news-wrapper:nth-of-type(2)');
-			if (secondNewsWrapper) secondNewsWrapper.dataset.section = 'chyquan';
-
-			// Set up click handlers for all cards
-			document.querySelectorAll('.news-card').forEach(card => {
-				card.addEventListener('click', openNewsModal);
-			});
-
-			// Set up close button for modal
-			const closeBtn = document.querySelector('.news-modal-close');
-			if (closeBtn) closeBtn.addEventListener('click', closeNewsModal);
-
-			// Close modal when clicking outside content
-			const modal = document.getElementById('newsModal');
-			if (modal) {
-				modal.addEventListener('click', function (event) {
-					if (event.target === modal) {
-						closeNewsModal();
-					}
-				});
-			}
-
-			// Add hover pause effect for the NEWS carousel
-			document.querySelectorAll('.news-wrapper').forEach(wrapper => {
-				wrapper.addEventListener('mouseenter', function () {
-					const inner = this.querySelector('.news-inner');
-					if (inner) inner.style.animationPlayState = 'paused';
-				});
-
-				wrapper.addEventListener('mouseleave', function () {
-					const inner = this.querySelector('.news-inner');
-					if (inner) inner.style.animationPlayState = 'running';
-				});
-			});
-		});
-	</script>
-	<script>
-		// Add click event listeners to the new blob cards
-		document.addEventListener('DOMContentLoaded', function () {
-			document.querySelectorAll('.blob-card-container .card').forEach(card => {
-				card.addEventListener('click', function () {
-					const newsId = this.getAttribute('data-news-id');
-					if (newsId && newsContent[newsId]) {
-						// Set modal content
-						document.getElementById('newsModalTitle').textContent = newsContent[newsId].title;
-						document.getElementById('newsModalBody').innerHTML = newsContent[newsId].content;
-
-						// Set modal color theme
-						document.documentElement.style.setProperty('--modal-color', newsContent[newsId].color);
-
-						// Show the modal
-						const modal = document.getElementById('newsModal');
-						modal.style.display = 'block';
-
-						// Add active class for animation
-						setTimeout(() => {
-							modal.classList.add('active');
-						}, 10);
-
-						// Prevent background scrolling
-						document.body.style.overflow = 'hidden';
-					}
-				});
-			});
-		});
-	</script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			// Detect when timeline elements enter viewport
-			const observer = new IntersectionObserver((entries) => {
-				entries.forEach(entry => {
-					if (entry.isIntersecting) {
-						entry.target.classList.add('fadeInUp');
-						observer.unobserve(entry.target);
-					}
-				});
-			}, {
-				threshold: 0.2,
-				rootMargin: '0px 0px -50px 0px'
-			});
-
-			// Observe all timeline events
-			document.querySelectorAll('.timeline__event').forEach((event, index) => {
-				event.style.animationDelay = `${index * 0.2}s`;
-				observer.observe(event);
-			});
-		});
-	</script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-		  // Function to check if element is in viewport
-		  function isInViewport(element) {
-			const rect = element.getBoundingClientRect();
-			return (
-			  rect.top >= 0 &&
-			  rect.left >= 0 &&
-			  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-			  rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-			);
-		  }
-		  
-		  // Add animation to timeline events when they come into view
-		  const events = document.querySelectorAll('.timeline__event');
-		  
-		  function checkPosition() {
-			events.forEach((event, index) => {
-			  if (isInViewport(event) && !event.classList.contains('animated')) {
+				// Add active class for animation
 				setTimeout(() => {
-				  event.classList.add('fadeInUp', 'animated');
-				}, index * 200);
-			  }
+					modal.classList.add('active');
+				}, 10);
+
+				// Prevent background scrolling
+				document.body.style.overflow = 'hidden';
+
+				// Pause carousel animation
+				const inner = card.closest('.news-inner');
+				if (inner) inner.style.animationPlayState = 'paused';
+			}
+
+			function closeNewsModal() {
+				const modal = document.getElementById('newsModal');
+				modal.classList.remove('active');
+
+				// Wait for animation to finish before hiding
+				setTimeout(() => {
+					modal.style.display = 'none';
+					document.body.style.overflow = 'auto';
+
+					// Resume all carousel animations
+					document.querySelectorAll('.news-inner').forEach(inner => {
+						inner.style.animationPlayState = 'running';
+					});
+				}, 300);
+			}
+
+			// Set up all event handlers when DOM is loaded
+			document.addEventListener('DOMContentLoaded', function () {
+				// Set up data attributes for first news list
+				const firstNewsWrapper = document.querySelector('.news-wrapper:nth-of-type(1)');
+				if (firstNewsWrapper) firstNewsWrapper.dataset.section = 'khachquan';
+
+				// Set up data attributes for second news list
+				const secondNewsWrapper = document.querySelector('.news-wrapper:nth-of-type(2)');
+				if (secondNewsWrapper) secondNewsWrapper.dataset.section = 'chyquan';
+
+				// Set up click handlers for all cards
+				document.querySelectorAll('.news-card').forEach(card => {
+					card.addEventListener('click', openNewsModal);
+				});
+
+				// Set up close button for modal
+				const closeBtn = document.querySelector('.news-modal-close');
+				if (closeBtn) closeBtn.addEventListener('click', closeNewsModal);
+
+				// Close modal when clicking outside content
+				const modal = document.getElementById('newsModal');
+				if (modal) {
+					modal.addEventListener('click', function (event) {
+						if (event.target === modal) {
+							closeNewsModal();
+						}
+					});
+				}
+
+				// Add hover pause effect for the NEWS carousel
+				document.querySelectorAll('.news-wrapper').forEach(wrapper => {
+					wrapper.addEventListener('mouseenter', function () {
+						const inner = this.querySelector('.news-inner');
+						if (inner) inner.style.animationPlayState = 'paused';
+					});
+
+					wrapper.addEventListener('mouseleave', function () {
+						const inner = this.querySelector('.news-inner');
+						if (inner) inner.style.animationPlayState = 'running';
+					});
+				});
 			});
-		  }
-		  
-		  // Initial check and on scroll
-		  window.addEventListener('scroll', checkPosition);
-		  checkPosition();
-		});
-	  </script>
+		</script>
+		<script>
+			// Add click event listeners to the new blob cards
+			document.addEventListener('DOMContentLoaded', function () {
+				document.querySelectorAll('.blob-card-container .card').forEach(card => {
+					card.addEventListener('click', function () {
+						const newsId = this.getAttribute('data-news-id');
+						if (newsId && newsContent[newsId]) {
+							// Set modal content
+							document.getElementById('newsModalTitle').textContent = newsContent[newsId].title;
+							document.getElementById('newsModalBody').innerHTML = newsContent[newsId].content;
+
+							// Set modal color theme
+							document.documentElement.style.setProperty('--modal-color', newsContent[newsId].color);
+
+							// Show the modal
+							const modal = document.getElementById('newsModal');
+							modal.style.display = 'block';
+
+							// Add active class for animation
+							setTimeout(() => {
+								modal.classList.add('active');
+							}, 10);
+
+							// Prevent background scrolling
+							document.body.style.overflow = 'hidden';
+						}
+					});
+				});
+			});
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				// Detect when timeline elements enter viewport
+				const observer = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							entry.target.classList.add('fadeInUp');
+							observer.unobserve(entry.target);
+						}
+					});
+				}, {
+					threshold: 0.2,
+					rootMargin: '0px 0px -50px 0px'
+				});
+
+				// Observe all timeline events
+				document.querySelectorAll('.timeline__event').forEach((event, index) => {
+					event.style.animationDelay = `${index * 0.2}s`;
+					observer.observe(event);
+				});
+			});
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				// Function to check if element is in viewport
+				function isInViewport(element) {
+					const rect = element.getBoundingClientRect();
+					return (
+						rect.top >= 0 &&
+						rect.left >= 0 &&
+						rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+						rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+					);
+				}
+
+				// Add animation to timeline events when they come into view
+				const events = document.querySelectorAll('.timeline__event');
+
+				function checkPosition() {
+					events.forEach((event, index) => {
+						if (isInViewport(event) && !event.classList.contains('animated')) {
+							setTimeout(() => {
+								event.classList.add('fadeInUp', 'animated');
+							}, index * 200);
+						}
+					});
+				}
+
+				// Initial check and on scroll
+				window.addEventListener('scroll', checkPosition);
+				checkPosition();
+			});
+		</script>
 
 </body>
 

@@ -3460,6 +3460,532 @@ body.dark .grax_tm_settings .cursor li .svg,
 	animation-delay: 1s;
 }
 
+.flip-card-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin: 40px 0;
+	width: 100%;
+	padding-top: 30px;
+}
+
+.flip-card {
+	position: relative;
+	width: calc(50% - 20px);
+	height: 300px;
+	background-color: #f2f2f2;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	perspective: 1000px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+	transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+.flip-card img.card-icon {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+	transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.flip-card__content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 25px;
+	box-sizing: border-box;
+	background-color: #f2f2f2;
+	transform: rotateX(-90deg);
+	transform-origin: bottom;
+	transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.flip-card:hover .flip-card__content {
+	transform: rotateX(0deg);
+}
+
+.flip-card__title {
+	margin: 0;
+	font-size: 22px;
+	color: #333;
+	font-weight: 700;
+	text-align: center;
+}
+
+.flip-card:hover img.card-icon {
+	scale: 0;
+}
+
+.flip-card__description {
+	margin: 10px 0 0;
+	font-size: 14px;
+	color: #555;
+	line-height: 1.4;
+	text-align: center;
+}
+
+/* Different colored backgrounds for each card */
+.flip-card:nth-child(1) {
+	background: linear-gradient(145deg, #ffe734, #ffc107);
+}
+
+.flip-card:nth-child(2) {
+	background: linear-gradient(145deg, #ff5252, #e54b4b);
+}
+
+.flip-card:nth-child(3) {
+	background: linear-gradient(145deg, #4caf50, #2e7d32);
+}
+
+.flip-card:nth-child(4) {
+	background: linear-gradient(145deg, #2196f3, #0d47a1);
+}
+
+/* Master Flip Card Styling - Matches Regular Flip Cards */
+.master-flip-card {
+	position: relative;
+	width: calc(50% - 20px);
+	/* Match regular flip card width */
+	height: 300px;
+	/* Match regular flip card height */
+	perspective: 1000px;
+	margin-bottom: 30px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.master-flip-card__inner {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 1s;
+	border-radius: 15px;
+}
+
+.master-flip-card:hover .master-flip-card__inner {
+	transform: rotateY(180deg);
+}
+
+.master-flip-card__front,
+.master-flip-card__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.master-flip-card__front {
+	background: linear-gradient(145deg, #f10404, #d80505);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.master-card-image {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 15px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.master-card-title {
+	margin-top: 20px;
+	font-size: 24px;
+	text-align: center;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+.master-flip-card__back {
+	background: #f8f8f8;
+	transform: rotateY(180deg);
+	padding: 15px;
+}
+
+/* Mini Cards Container */
+.mini-cards-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 10px;
+	width: 100%;
+	height: 100%;
+}
+
+/* Mini Flip Card Styling */
+.mini-flip-card {
+	width: 100%;
+	height: 100%;
+	perspective: 500px;
+}
+
+.mini-flip-card__inner {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+.mini-flip-card:hover .mini-flip-card__inner {
+	transform: rotateY(180deg);
+}
+
+.mini-flip-card__front,
+.mini-flip-card__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.mini-flip-card__front {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Different colored backgrounds for mini cards */
+.mini-flip-card:nth-child(1) .mini-flip-card__front {
+	background: linear-gradient(145deg, #ffe734, #ffc107);
+}
+
+.mini-flip-card:nth-child(2) .mini-flip-card__front {
+	background: linear-gradient(145deg, #4caf50, #2e7d32);
+}
+
+.mini-flip-card:nth-child(3) .mini-flip-card__front {
+	background: linear-gradient(145deg, #2196f3, #0d47a1);
+}
+
+.mini-flip-card:nth-child(4) .mini-flip-card__front {
+	background: linear-gradient(145deg, #9c27b0, #7b1fa2);
+}
+
+.mini-flip-card__front img.card-icon {
+	width: 80%;
+	height: 80%;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.mini-flip-card__back {
+	background: white;
+	transform: rotateY(180deg);
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.mini-card-title {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+	color: #333;
+}
+
+/* Circle Quarter Card Layout */
+.circle-container {
+	position: relative;
+	width: 800px;
+	height: 800px;
+	margin: 50px auto;
+	border-radius: 50%;
+	overflow: visible;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.quarter {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	overflow: visible;
+	cursor: pointer;
+	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.quarter:hover {
+	transform: scale(1.05);
+	filter: brightness(1.1);
+	z-index: 5;
+}
+
+/* Position each quarter */
+.quarter-1 {
+	top: 0;
+	left: 0;
+	border-radius: 100% 0 0 0;
+	transform-origin: bottom right;
+	background: linear-gradient(135deg, #ffe734, #ffc107);
+}
+
+.quarter-2 {
+	top: 0;
+	right: 0;
+	border-radius: 0 100% 0 0;
+	transform-origin: bottom left;
+	background: linear-gradient(225deg, #ff5252, #e54b4b);
+}
+
+.quarter-3 {
+	bottom: 0;
+	left: 0;
+	border-radius: 0 0 0 100%;
+	transform-origin: top right;
+	background: linear-gradient(45deg, #4caf50, #58d85e);
+}
+
+.quarter-4 {
+	bottom: 0;
+	right: 0;
+	border-radius: 0 0 100% 0;
+	transform-origin: top left;
+	background: linear-gradient(315deg, #2196f3, #558fe6);
+}
+
+.blob-border {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	z-index: 1;
+	opacity: 0.7;
+	filter: blur(12px);
+	animation: blob-bounce 8s infinite ease;
+}
+
+/* Quarter 1 blob */
+.quarter-1 .blob-border {
+	background-color: rgb(255, 200, 0);
+}
+
+/* Quarter 2 blob */
+.quarter-2 .blob-border {
+	background-color: rgb(255, 50, 50);
+}
+
+/* Quarter 3 blob */
+.quarter-3 .blob-border {
+	background-color: rgb(50, 150, 50);
+}
+
+/* Quarter 4 blob */
+.quarter-4 .blob-border {
+	background-color: rgb(50, 100, 255);
+}
+
+/* Content positioning */
+.quarter-content {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	z-index: 3;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+	padding: 15px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Position content within each quarter */
+.quarter-1 .quarter-content {
+	bottom: 10%;
+	right: 10%;
+}
+
+.quarter-2 .quarter-content {
+	bottom: 10%;
+	left: 10%;
+}
+
+.quarter-3 .quarter-content {
+	top: 10%;
+	right: 10%;
+}
+
+.quarter-4 .quarter-content {
+	top: 10%;
+	left: 10%;
+}
+
+.quarter-text {
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 8px;
+	text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.quarter-content h3 {
+	font-size: 14px;
+	font-weight: normal;
+	color: #666;
+	margin: 5px 0;
+}
+
+/* Center circle overlay */
+.center-circle {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+	z-index: 10;
+}
+
+.center-circle img {
+	width: 80%;
+	height: 80%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+/* Blob animation */
+@keyframes blob-bounce {
+	0% {
+	  transform: scale(0.95);
+	  border-radius: 100% 0 0 0;
+	}
+	25% {
+	  transform: scale(1.05);
+	  border-radius: 90% 10% 0 0;
+	}
+	50% {
+	  transform: scale(0.95);
+	  border-radius: 100% 0 0 0;
+	}
+	75% {
+	  transform: scale(1.05);
+	  border-radius: 85% 15% 0 0;
+	}
+	100% {
+	  transform: scale(0.95);
+	  border-radius: 100% 0 0 0;
+	}
+  }
+  
+  .quarter-2 .blob-border {
+	animation-delay: 0.5s;
+  }
+  .quarter-3 .blob-border {
+	animation-delay: 1s;
+  }
+  .quarter-4 .blob-border {
+	animation-delay: 1.5s;
+  }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.circle-container {
+		width: 400px;
+		height: 400px;
+	}
+
+	.quarter-content {
+		width: 100px;
+		height: 100px;
+	}
+
+	.quarter-content img {
+		width: 60px;
+		height: 60px;
+	}
+
+	.center-circle {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@media (max-width: 480px) {
+	.circle-container {
+		width: 300px;
+		height: 300px;
+	}
+
+	.quarter-content {
+		width: 80px;
+		height: 80px;
+	}
+
+	.quarter-content img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.center-circle {
+		width: 80px;
+		height: 80px;
+	}
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.custom-list li::before {
+    content: '✔'; /* You can replace this with any icon or image */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #e54b4b; /* Change the color as needed */
+    font-size: 20px; /* Adjust the size as needed */
+    line-height: 1.6;
+}
+
 /*---------------------------------------------------*/
 /*	14) GRAX MEDIA QUERIES (FOR SMALL DEVIVES)
 /*---------------------------------------------------*/
