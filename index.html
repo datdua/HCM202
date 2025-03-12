@@ -44,26 +44,26 @@
 		/* 3D Rotating Card Styles for NEWS section */
 		.news-wrapper {
 			width: 100%;
-			height: 700px;
+			height: 800px;
 			position: relative;
 			text-align: center;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			overflow: hidden;
-			margin: 40px 0;
+			margin: 20px 0;
 		}
 
 		.news-inner {
-			--w: 240px;
-			--h: 400px;
+			--w: 280px;
+			--h: 430px;
 			--translateZ: calc((var(--w) + var(--h)) * 0.5);
 			--rotateX: -5deg;
 			--perspective: 1200px;
 			position: absolute;
 			width: var(--w);
 			height: var(--h);
-			top: 5%;
+			top: 12%;
 			left: calc(50% - (var(--w) / 2));
 			z-index: 2;
 			transform-style: preserve-3d;
@@ -89,7 +89,6 @@
 			inset: 0;
 			transform: rotateY(calc((360deg / var(--quantity)) * var(--index))) translateZ(var(--translateZ));
 			background: white;
-			box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 			transition: transform 0.3s ease, box-shadow 0.3s ease;
 		}
 
@@ -149,17 +148,6 @@
 			margin-bottom: 10px;
 			overflow-wrap: break-word;
 			word-wrap: break-word;
-		}
-
-		.news-card::after {
-			content: '👆 Click to read more';
-			position: absolute;
-			bottom: 8px;
-			right: 8px;
-			font-size: 10px;
-			opacity: 0;
-			color: rgb(var(--color-card));
-			transition: opacity 0.3s ease;
 		}
 
 		.news-card:hover::after {
@@ -484,9 +472,9 @@
 						<ul class="anchor_nav">
 							<li class="current"><a href="#home">Trang Chủ</a></li>
 							<li><a href="#about">Giới Thiệu</a></li>
-							<li><a href="#news">Cơ Sở</a></li>
-							<li><a href="#formation">Quá Trình</a></li>
-							<li><a href="#legacy">Giá Trị</a></li>
+							<li><a href="#news">Đường Lối</a></li>
+							<li><a href="#formation">Xây Dựng</a></li>
+							<li><a href="#legacy">Khôi Phục</a></li>
 							<li><a href="#document">Tư Liệu</a></li>
 							<li><a href="#cq">CQ</a></li>
 						</ul>
@@ -518,10 +506,11 @@
 				<div class="container">
 					<div class="dropdown_inner">
 						<ul class="anchor_nav">
+							<li class="current"><a href="#home">Trang Chủ</a></li>
 							<li><a href="#about">Giới Thiệu</a></li>
-							<li><a href="#news">Cơ Sở</a></li>
-							<li><a href="#formation">Quá Trình</a></li>
-							<li><a href="#legacy">Giá Trị</a></li>
+							<li><a href="#news">Đường Lối</a></li>
+							<li><a href="#formation">Xây Dựng</a></li>
+							<li><a href="#legacy">Khôi Phục</a></li>
 							<li><a href="#document">Tư Liệu</a></li>
 							<li><a href="#cq">CQ</a></li>
 						</ul>
@@ -571,7 +560,7 @@
 						</div>
 						<div class="right wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s">
 							<div class="grax_tm_title_holder">
-								<h3>Tư Tưởng <span>Hồ CHí Minh</span></h3>
+								<h3>Lãnh đạo cách mạng cả nước <span>1965-1975</span></h3>
 							</div>
 							<div class="text">
 								<p>
@@ -631,100 +620,207 @@
 		<div class="grax_tm_section" id="news">
 			<div class="grax_tm_news">
 				<div class="container">
-					<div class="grax_tm_title_holder">
-						<h3>Cơ Sở <span>Hình Thành</span></h3>
+					<div class="grax_tm_title_holder" style="margin-bottom: 50px;">
+						<h3>Đường lối kháng chiến chống Mỹ <span> <br> cứu nước của Đảng</span></h3>
 					</div>
+					<h4 style="margin: 40px 0 20px;">Chiến tranh đặc biệt thất bại <span>, Chiến tranh cục bộ bắt
+							đầu</span></h4>
 
-					<h4 style="margin-bottom: 20px;">Cơ Sở <span>Khách Quan</span></h4>
-
+					<div class="accordion_container">
+						<!-- Accordion Item 1 -->
+						<div class="accordion_item">
+							<div class="accordion_header">
+								<h4>“Chiến tranh đặc biệt” của địch dần lộ rõ nguy cơ thất bại</h4>
+								<span class="icon">+</span>
+							</div>
+							<div class="accordion_content">
+								<div style="font-size: 20px;" class="content_inner">
+									<blockquote>Các chiến dịch như <span class="highlight-text">Ấp Bắc
+											(1963)</span>,<span class="highlight-text">Bình Giã (1964-1965)</span> giáng
+										đòn mạnh vào chiến lược “Chiến tranh đặc biệt”.</blockquote>
+									<blockquote>Quân đội Sài Gòn yếu kém, thiếu tinh thần chiến đấu.</blockquote>
+									<blockquote><span class="highlight-text">Kế hoạch ấp chiến lược bị phá sản</span> ->
+										nhân dân nổi dậy phá ấp, giải phóng nhiều vùng nông thôn.</blockquote>
+									<blockquote>Mỹ tăng cường viện trợ nhưng không hiệu quả.</blockquote>
+									<blockquote>Sau<span class="highlight-text">cuộc đảo chính lật đổ Ngô Đình Diệm
+											(11/1963)</span>, chính quyền Sài Gòn rơi vào bất ổn, liên tục thay đổi lãnh
+										đạo, chia rẽ nội bộ.</blockquote>
+									<ul
+										style="display: flex; justify-content: space-between; list-style-type: none; padding: 0; margin: 0;">
+										<li style="text-align: center; flex: 1;">
+											<img style="width: 90%; height: auto;"
+												src="https://thuviennguyenvanhuong.vn/wp-content/uploads/2023/11/Photo-monks_1493115432_VnEx.jpg"
+												alt="Biểu tình của người dân và Phật tử:" />
+											<figcaption
+												style="margin-top: 5px; font-size: 15px; font-weight: bold; color: #000000;">
+												Biểu tình của người dân và Phật tử</figcaption>
+										</li>
+										<li style="text-align: center; flex: 1;">
+											<img style="width: 90%; height: auto;"
+												src="https://thuviennguyenvanhuong.vn/wp-content/uploads/2023/11/7095515727_560e8ed3cf_o.jpg"
+												alt="Đảo chính tại cổng Dinh Tổng thống Ngô:" />
+											<figcaption
+												style="margin-top: 5px; font-size: 15px; font-weight: bold; color: #000000;">
+												Đảo chính tại cổng Dinh Tổng thống Ngô</figcaption>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Accordion Item 2 -->
+						<div class="accordion_item">
+							<div class="accordion_header">
+								<h4>Mỹ khởi động "Chiến tranh cục bộ"</h4>
+								<span class="icon">+</span>
+							</div>
+							<div class="accordion_content">
+								<div style="font-size: 20px;" class="content_inner">
+									<blockquote>Tổng thống Mỹ <span class="highlight-text">Lyndon B. Johnson</span> quyết
+										định tiến hành chiến lược “Chiến tranh cục bộ” ở miền Nam.</blockquote>
+									<blockquote><span class="highlight-text">“Chiến tranh cục bộ”:</span> là hình thức chiến tranh trong chiến lược toàn cầu “phản ứng linh hoạt” của Mỹ, biểu hiện -> Mỹ đưa quân chiến đấu cùng các nước đồng minh trực tiếp tham chiến, đóng vai trò chủ yếu trên chiến trường miền Nam; quân đội Sài Gòn đóng vai trò hỗ trợ và bình định. </blockquote>
+									<blockquote>Ngày 8-3-1965: Quân Mỹ đổ bộ Đà Nẵng. Đồng thời Mỹ mở cuộc chiến tranh phá hoại bằng không quân và hải quân đánh phá miền Bắc nhằm làm suy yếu miền Bắc, ngăn sự chi viện cho cách mạng miền Nam. </blockquote>
+								</div>
+								<div style="text-align: center; position: relative;">
+									<!-- Ảnh chính -->
+									<img src="img/news/phuc-1.jpg" alt="1965 Mar.8th_THUỶ QUÂN LỤC CHIẾN HOA KỲ 🇺🇸 ĐỔ BỘ ĐÀ NẴNG" style="width: 70%; height: auto;">
+									
+									<!-- Logo với hiệu ứng hover -->
+									<div class="logo-overlay">
+										<img src="https://play-lh.googleusercontent.com/j5KmJiZxrCRR7SBEjmLtn5gpQz8exDTIOTNM0xegJwQVQbyNZfSa-UtoHrWj2BLxm_Q=w240-h480-rw" alt="Artivive Logo" class="logo" />
+										<div class="overlay-text">Sử dụng app Artivive để quét ảnh này thành video tư liệu</div>
+									</div>
+							
+									<figcaption style="margin-top: 5px; font-size: 15px; font-weight: bold; color: #000000;">8-3-1965 - THUỶ QUÂN LỤC CHIẾN HOA KỲ 🇺🇸 ĐỔ BỘ ĐÀ NẴNG</figcaption>
+								</div>
+							</div>
+							
+							<!-- CSS -->
+							<style>
+								.logo-overlay {
+									position: absolute;
+									bottom: 10px;
+									right: 10px;
+									z-index: 2;
+								}
+							
+								.logo {
+									width: 50px;
+									height: 50px;
+									cursor: pointer;
+								}
+							
+								.overlay-text {
+									display: none;
+									font-size: 14px;
+									color: #fff;
+									background-color: rgba(0, 0, 0, 0.7);
+									padding: 5px;
+									border-radius: 5px;
+									margin-top: 10px;
+									text-align: center;
+								}
+							
+								/* Hiển thị chú thích khi hover vào logo */
+								.logo-overlay:hover .overlay-text {
+									display: block;
+								}
+							</style>
+							
+							
+						</div>
+					</div>
+					<h4 style="margin: 40px 0 20px;">Phát động kháng chiến <span>toàn quốc</span></h4>
+					<p style=" font-size: 20px;">Hội nghị lần thứ 11 ( 25 đến 27-3-1965 ) và lần thứ 12 ( 21 đến 27-12-1965 ) của Ban Chấp hành Trung ương Đảng đã phát động cuộc kháng chiến chống Mỹ, cứu nước trên phạm vi toàn quốc và hạ quyết tâm: <span class="highlight-text">“Động viên lực lượng của cả nước, kiên quyết đánh bại cuộc chiến tranh xâm lược của đế quốc Mỹ trong bất cứ tình huống nào, để bảo vệ miền Bắc, giải phóng miền Nam, hoàn thành cách mạng dân tộc dân chủ nhân dân trong cả nước, tiến tới thực hiện hòa bình thống nhất nước nhà”.</span></p>
+					
+					<div style="display: flex; align-items: center; gap: 20px;">
+						<h4 style="margin: 40px 0 20px;font-size: 24px; color: #333;">Nội dung đường lối kháng chiến và <span>Tư tưởng chỉ đạo chung</span> - Đại hội lần thứ III</h4>
+						<img src="https://cdn.tuyengiao.vn/uploads/2021/1/21/25/4d3f567a3ff431dc004bb1870e00c33c-1591346716971602518615.jpg?w=440&h=264&q=75&f=6&s=56q0pwtrsau" alt="Ảnh tiêu đề" style="margin: 40px 0 20px; width: 30%; height: 30%;">
+					</div>
+					
 					<!-- 3D Card Carousel for first news list -->
 					<div class="news-wrapper">
 						<div class="news-inner" style="--quantity: 6;">
 							<!-- Card 1 -->
-							<div class="news-card" style="--index: 0;--color-card: 229, 75, 75;">
+							<div class="news-card" style="--index: 0; --color-card: 155, 18, 144, 0.534; box-shadow: 0 10px 15px rgba(155, 18, 144, 0.534);">
 								<div class="news-img">
-									<img src="img/news/1.jpg" alt="Bối Cảnh Lịch Sử">
+									<img src="img/news/1.png" alt="Quyết Tâm Chiến Lược">
 								</div>
 								<div class="news-content">
-									<h3>Bối Cảnh Lịch Sử Hình Thành Tư Tưởng Hồ Chí Minh</h3>
-									<p>Bác sinh ngày 19/05/1890, trong lúc đất nước gặp nhiều biến động. Triều đình
-										Nguyễn dần đầu hàng Pháp và thừa nhận nền bảo hộ của chúng trên toàn đất nước.
-									</p>
-									<p>Cuối TK XIX, các cuộc khởi nghĩa dưới khẩu hiệu "Cần Vương" dần thất bại => Hệ tư
-										tưởng phong kiến lỗi thời trước các nhiệm vụ lịch sử.</p>
+									<h3 style="color: #000000;">Quyết Tâm Chiến Lược</h3>
+									<p>Dù tình hình chiến tranh ngày càng ác liệt, Đảng khẳng định nhân dân ta có đủ điều kiện và sức mạnh để đánh bại Mỹ.</p>
+									<p>Cuộc chiến tranh xâm lược của Mỹ ở miền Nam là một cuộc chiến tranh thực dân mới, chứa đầy mâu thuẫn chiến lược và không thể cứu vãn được tình thế bế tắc của chúng: từ lực lượng, chính trị đến chiến lược toàn cầu.</p>
+									<p>Với tinh thần “Quyết tâm thắng giặc Mỹ xâm lược”, Đảng phát động kháng chiến chống Mỹ, cứu nước là nhiệm vụ thiêng liêng của cả dân tộc.</p>
 								</div>
 							</div>
-
+						
 							<!-- Card 2 -->
-							<div class="news-card" style="--index: 1;--color-card: 75, 138, 229;">
+							<div class="news-card" style="--index: 1; --color-card: 75, 138, 229, 0.534; box-shadow: 0 10px 15px rgba(75, 138, 229, 0.534);">
 								<div class="news-img">
-									<img src="img/news/2.jpg" alt="Bối Cảnh Thời Đại">
+									<img src="img/news/2.png" alt="Mục tiêu chiến lược">
 								</div>
 								<div class="news-content">
-									<h3>Bối Cảnh Thời Đại Hình Thành Tư Tưởng Hồ Chí Minh</h3>
-									<p>Ở Việt Nam, việc cứu nước chìm trong bóng tối: "không có đường ra". Ngoài thế
-										giới, chủ nghĩa tư bản chuyển sang giai đoạn độc quyền.</p>
-									<p>Các cuộc đấu tranh của công nhân các nước TBCN đầu XIX - cuối XX với thành công
-										rực rỡ của "Cách mạng tháng Mười Nga năm 1917".</p>
+									<h3 style="color: #000000;">Mục Tiêu Chiến Lược</h3>
+									<p>Kiên quyết đánh bại cuộc chiến tranh xâm lược của đế quốc Mỹ trong bất kỳ tình huống nào.</p>
+									<p>Nhằm bảo vệ miền Bắc, giải phóng miền Nam, hoàn thành cách mạng dân tộc dân chủ nhân dân trong cả nước.</p>
+									<p>Tiến tới thực hiện hòa bình thống nhất nước nhà.</p>
 								</div>
 							</div>
-
+						
 							<!-- Card 3 -->
-							<div class="news-card" style="--index: 2;--color-card: 142, 212, 99;">
+							<div class="news-card" style="--index: 2; --color-card: 142, 212, 99, 0.534; box-shadow: 0 10px 15px rgba(142, 212, 99, 0.534);">
 								<div class="news-img">
-									<img src="img/news/3.jpg" alt="Những Tiền Đề">
+									<img src="img/news/6.png" alt="Những Tiền Đề">
 								</div>
 								<div class="news-content">
-									<h3>Những Tiền Đề, Tư Tưởng - Lý Luận</h3>
-									<p>Giá trị truyền thống tốt đẹp của của dân tộc Việt Nam hình thành nên truyền thống
-										yêu nước, kiên cường, bất khuất của tư tưởng Hồ Chí Minh.</p>
-									<p>Chủ nghĩa yêu nước là truyền thống, tư tưởng, tình cảm thiêng liêng cao quý nhất,
-										là cội nguồn của trí tuệ và lòng dũng cảm của người Việt.</p>
+									<h3 style="color: #000000;">Phương Châm Chiến Lược</h3>
+									<p>Đánh lâu dài, dựa vào sức mình là chính.</p>
+									<p>Càng đánh càng mạnh, cố gắng mức độ cao.</p>
+									<p>Tập trung lực lượng cả 2 miền, tranh thủ thời cơ giành thắng lợi quyết định trong thời gian ngắn trên chiến trường miền Nam.</p>
 								</div>
 							</div>
-							<!-- Card 1 -->
-							<div class="news-card" style="--index: 3;--color-card: 229, 75, 75;">
+						
+							<!-- Card 4 -->
+							<div class="news-card" style="--index: 3; --color-card: 229, 75, 75, 0.534; box-shadow: 0 10px 15px rgba(229, 75, 75, 0.534);">
 								<div class="news-img">
-									<img src="img/news/1.jpg" alt="Bối Cảnh Lịch Sử">
+									<img src="img/news/7.png" alt="Bối Cảnh Lịch Sử">
 								</div>
 								<div class="news-content">
-									<h3>Bối Cảnh Lịch Sử Hình Thành Tư Tưởng Hồ Chí Minh</h3>
-									<p>Bác sinh ngày 19/05/1890, trong lúc đất nước gặp nhiều biến động. Triều đình
-										Nguyễn dần đầu hàng Pháp và thừa nhận nền bảo hộ của chúng trên toàn đất nước.
-									</p>
-									<p>Cuối TK XIX, các cuộc khởi nghĩa dưới khẩu hiệu "Cần Vương" dần thất bại => Hệ tư
-										tưởng phong kiến lỗi thời trước các nhiệm vụ lịch sử.</p>
+									<h3 style="color: #000000;">Tư Tưởng Chỉ Đạo Đối Với Miền Nam</h3>
+									<p>Giữ vững và phát triển thế tiến công, kiên quyết tiến công và liên tục tiến công.</p>
+									<p>Tiếp tục kiên trì phương châm kết hợp đấu tranh quân sự với chính trị, triệt để thực hiện ba mũi giáp công, đánh địch trên cả 3 vùng chiến lược.</p>
+									<p>Quân sự có tác dụng quyết định trực tiếp và giữ một vị trí ngày càng quan trọng.</p>
 								</div>
 							</div>
-
-							<!-- Card 2 -->
-							<div class="news-card" style="--index: 4;--color-card: 75, 138, 229;">
+						
+							<!-- Card 5 -->
+							<div class="news-card" style="--index: 4; --color-card: 229, 206, 75, 0.534; box-shadow: 0 10px 15px rgba(229, 206, 75, 0.534);">
 								<div class="news-img">
-									<img src="img/news/2.jpg" alt="Bối Cảnh Thời Đại">
+									<img src="img/news/8.png" alt="Bối Cảnh Thời Đại">
 								</div>
 								<div class="news-content">
-									<h3>Bối Cảnh Thời Đại Hình Thành Tư Tưởng Hồ Chí Minh</h3>
-									<p>Ở Việt Nam, việc cứu nước chìm trong bóng tối: "không có đường ra". Ngoài thế
-										giới, chủ nghĩa tư bản chuyển sang giai đoạn độc quyền.</p>
-									<p>Các cuộc đấu tranh của công nhân các nước TBCN đầu XIX - cuối XX với thành công
-										rực rỡ của "Cách mạng tháng Mười Nga năm 1917".</p>
+									<h3 style="color: #000000;">Tư Tưởng Chỉ Đạo Đối Với Miền Bắc</h3>
+									<p>Chuyển hướng xây dựng kinh tế, đảm bảo tiếp tục xây dựng miền Bắc vững mạnh về kinh tế và quốc phòng.</p>
+									<p>Tiến hành cuộc chiến tranh nhân dân chống chiến tranh phá hoại của Mỹ để bảo vệ miền Bắc XHCN.</p>
+									<p>Động viên sức người ở mức cao nhất để chi viện cuộc chiến tranh giải phóng miền Nam.</p>
+									<p>Đồng thời chuẩn bị đề phòng địch trong trường hợp chúng liều lĩnh mở rộng chiến tranh cục bộ cả nước.</p>
 								</div>
 							</div>
-
-							<!-- Card 3 -->
-							<div class="news-card" style="--index: 5;--color-card: 142, 212, 99;">
+						
+							<!-- Card 6 -->
+							<div class="news-card" style="--index: 5; --color-card: 99, 195, 212, 0.534; box-shadow: 0 10px 15px rgba(99, 195, 212, 0.534);">
 								<div class="news-img">
-									<img src="img/news/3.jpg" alt="Những Tiền Đề">
+									<img src="img/news/9.png" alt="Những Tiền Đề">
 								</div>
 								<div class="news-content">
-									<h3>Những Tiền Đề, Tư Tưởng - Lý Luận</h3>
-									<p>Giá trị truyền thống tốt đẹp của của dân tộc Việt Nam hình thành nên truyền thống
-										yêu nước, kiên cường, bất khuất của tư tưởng Hồ Chí Minh.</p>
-									<p>Chủ nghĩa yêu nước là truyền thống, tư tưởng, tình cảm thiêng liêng cao quý nhất,
-										là cội nguồn của trí tuệ và lòng dũng cảm của người Việt.</p>
+									<h3 style="color: #000000;">Về Mối Quan Hệ Và Nhiệm Vụ Cách Mạng Cả Hai Miền</h3>
+									<p>Miền Nam là tiền tuyến lớn, miền Bắc là hậu phương lớn.</p>
+									<p>Bảo vệ miền Bắc là nhiệm vụ chung của cả nước, vì đây là hậu phương vững chắc cho cuộc kháng chiến.</p>
+									<p>Hai nhiệm vụ bảo vệ miền Bắc và giải phóng miền Nam gắn bó chặt chẽ, không tách rời.</p>
+									<p>Khẩu hiệu “Tất cả để đánh thắng giặc Mỹ xâm lược” thể hiện quyết tâm của toàn dân tộc.</p>
 								</div>
 							</div>
 						</div>
+						
 					</div>
 
 					<h4 style="margin: 40px 0 20px;">Nhân Tố <span>Chủ Quan</span></h4>
@@ -1144,8 +1240,8 @@
 		</div>
 	</div>
 	<!-- /DOCUMENTS -->
-	 <!-- MINIGAME -->
-	 <div style="width:100%;display:flex;flex-direction:column;gap:8px;min-height:635px;">
+	<!-- MINIGAME -->
+	<div style="width:100%;display:flex;flex-direction:column;gap:8px;min-height:635px;">
 		<iframe src="https://quizizz.com/join?gc=404683" style="flex:1;" frameBorder="0" allowfullscreen></iframe>
 	</div>
 	<!-- /MINIGAME -->
@@ -1918,8 +2014,8 @@
 			document.documentElement.style.setProperty('--modal-color', newsItem.color);
 
 			// Show the modal
-			const modal = document.getElementById('newsModal');
-			modal.style.display = 'block';
+			// const modal = document.getElementById('newsModal');
+			// modal.style.display = 'block';
 
 			// Add active class for animation
 			setTimeout(() => {
@@ -2046,36 +2142,36 @@
 		});
 	</script>
 	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-		  // Function to check if element is in viewport
-		  function isInViewport(element) {
-			const rect = element.getBoundingClientRect();
-			return (
-			  rect.top >= 0 &&
-			  rect.left >= 0 &&
-			  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-			  rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-			);
-		  }
-		  
-		  // Add animation to timeline events when they come into view
-		  const events = document.querySelectorAll('.timeline__event');
-		  
-		  function checkPosition() {
-			events.forEach((event, index) => {
-			  if (isInViewport(event) && !event.classList.contains('animated')) {
-				setTimeout(() => {
-				  event.classList.add('fadeInUp', 'animated');
-				}, index * 200);
-			  }
-			});
-		  }
-		  
-		  // Initial check and on scroll
-		  window.addEventListener('scroll', checkPosition);
-		  checkPosition();
+		document.addEventListener('DOMContentLoaded', function () {
+			// Function to check if element is in viewport
+			function isInViewport(element) {
+				const rect = element.getBoundingClientRect();
+				return (
+					rect.top >= 0 &&
+					rect.left >= 0 &&
+					rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+					rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+				);
+			}
+
+			// Add animation to timeline events when they come into view
+			const events = document.querySelectorAll('.timeline__event');
+
+			function checkPosition() {
+				events.forEach((event, index) => {
+					if (isInViewport(event) && !event.classList.contains('animated')) {
+						setTimeout(() => {
+							event.classList.add('fadeInUp', 'animated');
+						}, index * 200);
+					}
+				});
+			}
+
+			// Initial check and on scroll
+			window.addEventListener('scroll', checkPosition);
+			checkPosition();
 		});
-	  </script>
+	</script>
 
 </body>
 
