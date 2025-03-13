@@ -3779,7 +3779,8 @@ body.dark .grax_tm_settings .cursor li .svg,
 	border-radius: 50%;
 	overflow: visible;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-	padding-top: 50px;
+	background-color: white;
+	z-index: 5;
 }
 
 .quarter {
@@ -3830,35 +3831,88 @@ body.dark .grax_tm_settings .cursor li .svg,
 	background: linear-gradient(315deg, #2196f3, #558fe6);
 }
 
+/* Blob border - hidden by default, shown on hover */
 .blob-border {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	border-radius: inherit;
 	z-index: 1;
-	opacity: 0.7;
-	filter: blur(12px);
-	animation: blob-bounce 8s infinite ease;
+	pointer-events: none;
+	box-shadow: none;
+	background: none;
+	top: 0;
+	left: 0;
+	opacity: 0; /* Hide by default */
+	transition: opacity 0.3s ease; /* Smooth transition for appearance */
 }
 
-/* Quarter 1 blob */
+/* Show blob border on hover */
+.quarter:hover .blob-border {
+	opacity: 1;
+}
+
+/* Quarter 1 blob border - neon yellow */
 .quarter-1 .blob-border {
-	background-color: rgb(255, 200, 0);
+    border: 4px solid rgb(255, 230, 0);
+    box-shadow: 0 0 10px 2px rgba(255, 230, 0, 0.7),
+        0 0 20px rgba(255, 230, 0, 0.5),
+        inset 0 0 10px rgba(255, 230, 0, 0.3);
+    filter: blur(1.5px);
+    /* Only animate when parent is hovered */
+    animation: none;
 }
 
-/* Quarter 2 blob */
+.quarter-1:hover .blob-border {
+    animation: neon-pulse 1.5s infinite alternate;
+}
+
+/* Quarter 2 blob border - neon red */
 .quarter-2 .blob-border {
-	background-color: rgb(255, 50, 50);
+    border: 4px solid rgb(255, 50, 50);
+    box-shadow: 0 0 10px 2px rgba(255, 50, 50, 0.7),
+        0 0 20px rgba(255, 50, 50, 0.5),
+        inset 0 0 10px rgba(255, 50, 50, 0.3);
+    filter: blur(1.5px);
+    /* Only animate when parent is hovered */
+    animation: none;
 }
 
-/* Quarter 3 blob */
+.quarter-2:hover .blob-border {
+    animation: neon-pulse 1.5s infinite alternate;
+    animation-delay: 0s, 0.5s;
+}
+
+/* Quarter 3 blob border - neon green */
 .quarter-3 .blob-border {
-	background-color: rgb(50, 150, 50);
+    border: 4px solid rgb(50, 255, 50);
+    box-shadow: 0 0 10px 2px rgba(50, 255, 50, 0.7),
+        0 0 20px rgba(50, 255, 50, 0.5),
+        inset 0 0 10px rgba(50, 255, 50, 0.3);
+    filter: blur(1.5px);
+    /* Only animate when parent is hovered */
+    animation: none;
 }
 
-/* Quarter 4 blob */
+.quarter-3:hover .blob-border {
+    animation: neon-pulse 1.5s infinite alternate;
+    animation-delay: 0.3s, 1s;
+}
+
+/* Quarter 4 blob border - neon blue */
 .quarter-4 .blob-border {
-	background-color: rgb(50, 100, 255);
+    border: 4px solid rgb(50, 150, 255);
+    box-shadow: 0 0 10px 2px rgba(50, 150, 255, 0.7),
+        0 0 20px rgba(50, 150, 255, 0.5),
+        inset 0 0 10px rgba(50, 150, 255, 0.3);
+    filter: blur(1.5px);
+    /* Only animate when parent is hovered */
+    animation: none;
+}
+
+.quarter-4:hover .blob-border {
+    animation: neon-pulse 1.5s infinite alternate;
+    animation-delay: 0.6s, 1.5s;
 }
 
 /* Content positioning */
@@ -3874,30 +3928,39 @@ body.dark .grax_tm_settings .cursor li .svg,
 	z-index: 3;
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.9);
-	/* Semi-transparent white background */
 	padding: 15px;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+	transition: transform 0.3s ease; /* Smooth transition for content */
 }
 
 /* Position content within each quarter */
 .quarter-1 .quarter-content {
 	bottom: 10%;
 	right: 10%;
+	transform-origin: center center;
 }
 
 .quarter-2 .quarter-content {
 	bottom: 10%;
 	left: 10%;
+	transform-origin: center center;
 }
 
 .quarter-3 .quarter-content {
 	top: 10%;
 	right: 10%;
+	transform-origin: center center;
 }
 
 .quarter-4 .quarter-content {
 	top: 10%;
 	left: 10%;
+	transform-origin: center center;
+}
+
+/* Make sure hover affects both the quarter and its content */
+.quarter:hover .quarter-content {
+	z-index: 4;
 }
 
 .quarter-text {
@@ -3928,8 +3991,10 @@ body.dark .grax_tm_settings .cursor li .svg,
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-	z-index: 10;
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+	z-index: 101;
+	border: 3px solid white;
+	overflow: hidden;
 }
 
 .center-circle img {
@@ -3937,46 +4002,28 @@ body.dark .grax_tm_settings .cursor li .svg,
 	height: 80%;
 	object-fit: cover;
 	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
 }
 
-/* Blob animation */
-@keyframes blob-bounce {
-	0% {
-		transform: scale(0.95);
-		border-radius: 100% 0 0 0;
-	}
-
-	25% {
-		transform: scale(1.05);
-		border-radius: 90% 10% 0 0;
-	}
-
-	50% {
-		transform: scale(0.95);
-		border-radius: 100% 0 0 0;
-	}
-
-	75% {
-		transform: scale(1.05);
-		border-radius: 85% 15% 0 0;
-	}
-
-	100% {
-		transform: scale(0.95);
-		border-radius: 100% 0 0 0;
-	}
+.grax_tm_topbar.animate {
+    z-index: 100; /* Keep this below the center circle's z-index */
 }
 
-.quarter-2 .blob-border {
-	animation-delay: 0.5s;
-}
-
-.quarter-3 .blob-border {
-	animation-delay: 1s;
-}
-
-.quarter-4 .blob-border {
-	animation-delay: 1.5s;
+/* Neon pulse animation */
+@keyframes neon-pulse {
+	from {
+		opacity: 0.8;
+		box-shadow: 0 0 5px 2px currentColor, 
+					0 0 10px currentColor, 
+					inset 0 0 5px currentColor;
+	}
+	to {
+		opacity: 1;
+		box-shadow: 0 0 10px 4px currentColor, 
+					0 0 20px 2px currentColor, 
+					inset 0 0 10px currentColor;
+	}
 }
 
 /* Responsive adjustments */
@@ -4000,27 +4047,12 @@ body.dark .grax_tm_settings .cursor li .svg,
 		width: 100px;
 		height: 100px;
 	}
-}
-
-@media (max-width: 480px) {
-	.circle-container {
-		width: 300px;
-		height: 300px;
-	}
-
-	.quarter-content {
-		width: 80px;
-		height: 80px;
-	}
-
-	.quarter-content img {
-		width: 40px;
-		height: 40px;
-	}
-
-	.center-circle {
-		width: 80px;
-		height: 80px;
+	
+	.quarter-1 .blob-border,
+	.quarter-2 .blob-border,
+	.quarter-3 .blob-border,
+	.quarter-4 .blob-border {
+		border-width: 3px;
 	}
 }
 
@@ -4547,11 +4579,13 @@ body.dark .grax_tm_settings .cursor li .svg,
 	box-shadow: -5px 0 30px rgba(0, 0, 0, 0.2);
 	transition: right 0.4s ease-in-out;
 	overflow-y: auto;
+
 	&::-webkit-scrollbar {
-        display: none;
-    }
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+		display: none;
+	}
+
+	scrollbar-width: none;
+	-ms-overflow-style: none;
 }
 
 .history-drawer.active {
