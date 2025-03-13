@@ -1133,7 +1133,7 @@ h6 {
 	clear: both;
 	float: left;
 	margin-bottom: 30px !important;
-    z-index: 20;
+	z-index: 20;
 }
 
 .grax_tm_title_holder span {
@@ -3379,6 +3379,19 @@ body.dark .grax_tm_settings .cursor li .svg,
 	color: #ff9900;
 }
 
+.timeline__event--type6 .timeline__event__icon {
+	background: rgba(189, 189, 12, 0.2);
+	color: #dfd107;
+}
+
+.timeline__event--type6 .timeline__event__date {
+	background: #dfd107;
+}
+
+.timeline__event--type6 .timeline__event__title {
+	color: #dfd107;
+}
+
 .grax_tm_section#formation .container {
 	max-width: 100%;
 	padding: 0 40px;
@@ -4534,6 +4547,11 @@ body.dark .grax_tm_settings .cursor li .svg,
 	box-shadow: -5px 0 30px rgba(0, 0, 0, 0.2);
 	transition: right 0.4s ease-in-out;
 	overflow-y: auto;
+	&::-webkit-scrollbar {
+        display: none;
+    }
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .history-drawer.active {
@@ -4659,6 +4677,63 @@ body.dark .grax_tm_settings .cursor li .svg,
 .drawer-overlay.active {
 	display: block;
 	opacity: 1;
+}
+
+/* Historical Quote Container Styling */
+.historical-quote-container {
+	width: 85%;
+	margin: 40px auto;
+	border-radius: 15px;
+	box-shadow: 0 5px 20px rgba(229, 75, 75, 0.2);
+	overflow: hidden;
+}
+
+/* Quote section with red background */
+.historical-quote {
+	padding: 25px 30px;
+	background: linear-gradient(135deg, rgba(229, 75, 75, 0.9), rgba(196, 59, 59, 0.95));
+	color: white;
+	font-style: italic;
+	font-weight: 500;
+	line-height: 1.6;
+	position: relative;
+	border-radius: 15px 15px 0 0;
+}
+
+/* Quote icon styling */
+.quote-icon {
+	position: absolute;
+	left: 15px;
+	top: 10px;
+	font-size: 48px;
+	opacity: 0.3;
+	color: #fff;
+}
+
+/* Analysis section */
+.quote-analysis {
+	background-color: #fff;
+	padding: 25px 30px;
+	border-radius: 0 0 15px 15px;
+	border-top: 4px solid rgba(229, 75, 75, 0.2);
+}
+
+.quote-analysis p {
+	margin: 0;
+	color: #333;
+	line-height: 1.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.historical-quote-container {
+		width: 95%;
+	}
+
+	.historical-quote,
+	.quote-analysis {
+		padding: 20px;
+	}
 }
 
 /* Responsive Styles */
