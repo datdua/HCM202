@@ -97,7 +97,7 @@ const timelineContent = {
         title: "Tổng tiến công Tết Mậu Thân",
         date: "1968",
         content: `
-            <p>Từ 24-1 đến 15-7-1968, Quân giải phóng mở <span class = "highlight-text" data-keyword ="Chiến dịch đường 0 Khe Sanh"> chiến dịch đường 0 Khe Sanh </span>. Đêm 30 rạng ngày 21-1-1968, đúng dịp giao thừa Tết Mậu Thân, thừa lúc địch sơ hở, cuộc tổng tiến công và nổi dậy đợt I đã được phát động trên toàn miền Nam.</p>
+            <p>Từ 24-1 đến 15-7-1968, Quân giải phóng mở <span class = "highlight-text" data-keyword ="Chiến dịch đường 9 Khe Sanh"> chiến dịch đường 9 Khe Sanh </span>. Đêm 30 rạng ngày 21-1-1968, đúng dịp giao thừa Tết Mậu Thân, thừa lúc địch sơ hở, cuộc tổng tiến công và nổi dậy đợt I đã được phát động trên toàn miền Nam.</p>
             
             <div class="highlight">
                 <p>Quân ta đồng loạt tiến công địch từ Đường 9 - Khe Sanh đến ĐBSCL, đặc biệt mạnh mẽ tại Sài Gòn - Gia Định, Huế.</p>
